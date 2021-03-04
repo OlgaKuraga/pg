@@ -1,0 +1,1901 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" rel="stylesheet" />
+<!-- <link rel="stylesheet" href="Media.css"> -->
+<style type="text/css">
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  body {
+    background-color: #FEFEFE;
+    display: flex;
+    flex-direction: column;
+    /*    height:100vh;*/
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: #373737;
+  }
+
+  .navbar-light .navbar-toggler {
+    color: #ffffff;
+    border-color: #FF6600;
+    background-color: #FF6600;
+  }
+
+  .navbar-toggler {
+    padding: .25rem .75rem;
+  }
+
+  ul {
+    padding-inline-start: 0px !important;
+  }
+
+  .table td,
+  .table th {
+    vertical-align: top !important;
+  }
+
+  b,
+  strong {
+    font-weight: bold;
+  }
+
+  .w_50 {
+    width: 30%;
+    margin: 2rem auto 0.1rem;
+  }
+
+  .card {
+
+    border: 1px solid rgba(82, 77, 74, 0.12);
+    border-radius: .25rem;
+  }
+
+  .card_shadow {
+    box-shadow: 7px 5px 30px rgba(82, 77, 74, 0.12);
+  }
+
+  .description_c {
+    margin-left: 0.9em;
+  }
+
+  .gradient_persik {
+    background: linear-gradient(89.96deg, rgba(255, 160, 240, 0.5) 0.75%, rgba(255, 255, 255, 0) 72.7%);
+    margin-left: 2rem;
+    margin-bottom: 1.2rem;
+    margin-top: 1rem;
+  }
+
+  .margin-top_gr {
+    padding-top: 1rem;
+  }
+
+  .badge-secondary {
+    color: #fff;
+    background-color: #3A96FF !important;
+  }
+
+  .badge {
+    padding: .5em .5em;
+    border-radius: 10rem;
+
+  }
+
+  *,
+  ::after,
+  ::before {
+    box-sizing: border-box;
+  }
+
+  .no-gutters {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  h1 {
+    background: none !important;
+    padding-left: 0px !important;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  a.active.focus,
+  a.active:focus,
+  a.focus,
+  a:active.focus,
+  a:active:focus,
+  a:focus,
+  button.active.focus,
+  button.active:focus,
+  button.focus,
+  button:active.focus,
+  button:active:focus,
+  button:focus,
+  .btn.active.focus,
+  .btn.active:focus,
+  .btn.focus,
+  .btn:active.focus,
+  .btn:active:focus,
+  .btn:focus {
+    outline: 0 !important;
+    outline-color: transparent !important;
+    outline-width: 0 !important;
+    outline-style: none !important;
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0) !important;
+  }
+
+  .img-wrap {
+    position: relative;
+  }
+
+  .txt-wrapp {
+    position: absolute;
+    bottom: 27%;
+    left: 3%;
+    width: 100%;
+  }
+
+  .bckg-img1 {
+    width: 100%;
+  }
+
+  .logo {
+    max-width: 150px;
+  }
+
+  .wrapper {
+    margin: 0 !important;
+  }
+
+  .margin_white_arrow {
+    margin: 4rem auto 2rem auto;
+  }
+
+  .margin_white_arrow_g {
+    margin: 4rem auto 4rem auto;
+  }
+
+  .padding_white_arrow {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+  }
+
+  .padding_white_arrow_g {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .margin_logo {
+    margin: 2% 0% 2% 0%;
+  }
+
+  .hide_mob {
+    display: block;
+  }
+
+  .show_mob {
+    display: none;
+  }
+
+  .orange {
+    color: #FF6600 !important;
+  }
+
+  .orange_b {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    background-color: #FF6600;
+    border-radius: 0.3em;
+    color: #ffffff !important;
+  }
+
+  .blue_b {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    background-color: #388AE3;
+    border-radius: 0.3em;
+    color: #ffffff !important;
+  }
+
+  .navbar-expand-xl .navbar-nav .nav-link {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-link:hover {
+    opacity: 0.6;
+  }
+
+  .p_sp {
+    margin-bottom: 1rem !important;
+    font-size: 20px;
+  }
+
+  .divider {
+    margin-bottom: 1em;
+  }
+
+  .divider_2 {
+    margin-bottom: 4em;
+  }
+
+  .divider_3 {
+    margin-bottom: 2.5em;
+  }
+
+  .divider_4 {
+    margin-bottom: 2em;
+  }
+
+  .badge-secondary {
+    color: #ffffff;
+    background-color: #FF9A56;
+  }
+
+  .h5_txt {
+    /*    color: #FF9A56;*/
+    font-weight: 600;
+  }
+
+  .p_3col_img {
+    margin-top: 0.8rem;
+    margin-left: 0.5rem
+  }
+
+  .black {
+    background-color: #262626;
+  }
+
+  .b_bottom {
+    border-bottom: 2px solid #C4C4C4;
+  }
+
+  .btn_otstup_footer {
+    margin-top: 3.5%;
+    margin-bottom: 3.5%;
+    padding: .5rem;
+  }
+
+  .footer {
+    background-color: #444444;
+  }
+
+  .icons_footer {
+    display: inline-block;
+    margin: auto 8px auto 0px;
+    padding-bottom: 10px;
+  }
+
+  .cont_icon {
+    max-width: 30px;
+  }
+
+  .cont_icon_2 {
+    max-width: 30px;
+    margin-right: 2%;
+  }
+
+  .header_show {
+    display: block;
+  }
+
+  .header_hide {
+    display: none;
+  }
+
+  .header_hide_mob {
+    display: none;
+  }
+
+  .contacts li {
+    padding-bottom: 5px;
+    padding-left: 0px;
+  }
+
+  .divider_case {
+    margin-bottom: 5em;
+  }
+
+  .divider_img {
+    margin-bottom: 0.1em;
+  }
+
+  .display {
+    display: block;
+  }
+
+  .display_2 {
+    display: block;
+    padding-top: 0.2em;
+  }
+
+  .marg-tab {
+    margin-top: 0.5rem;
+  }
+
+  .not_display {
+    display: none;
+  }
+
+  .white {
+    color: #ffffff;
+  }
+
+  .gray {
+    background-color: #EEEEEE;
+  }
+
+  .table .thead-dark th {
+    color: #373737;
+    background-color: #F9F9F9;
+    border-color: #C4C4C4;
+  }
+
+  .no_border {
+    border-top: 1px solid #F9F9F9 !important;
+    border-bottom: 1px solid #F9F9F9 !important;
+  }
+
+  .carousel-indicators li {
+    border-bottom: 1px solid transparent;
+  }
+
+  .txt_bl {
+    color: #373737;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .marg_top_li {
+    margin-top: 0.5rem;
+  }
+
+  .table_4 {
+    background-color: #F9F9F9;
+    border-color: #C4C4C4;
+  }
+
+  .no_decor {
+    list-style-type: none;
+  }
+
+  .hid_1200 {
+    display: block;
+  }
+
+  .sh_1200 {
+    display: none;
+  }
+
+  .sh_m_992 {
+    display: none;
+  }
+
+  .sh_m_720 {
+    display: none;
+  }
+
+  .hi_main {
+    display: block;
+  }
+
+  @media all and (max-width: 1200px) {
+    .txt-wrapp {
+      position: absolute;
+      bottom: 18%;
+      left: 3%;
+      width: 100%;
+    }
+
+    .hid_1200 {
+      display: none;
+    }
+
+    .sh_1200 {
+      display: block;
+    }
+
+    .navbar-brand {
+      margin-left: 0.5rem;
+    }
+  }
+
+  @media all and (max-width: 1085.9px) {
+    .txt-wrapp {
+      position: absolute;
+      bottom: 18%;
+      left: 3%;
+      width: 100%;
+    }
+  }
+
+  @media all and (max-width: 1000.9px) {
+
+    .txt-wrapp {
+      position: absolute;
+      bottom: 22%;
+      left: 3%;
+      width: 100%;
+    }
+  }
+
+  @media all and (max-width: 992.9px) {
+    .sh_m_992 {
+      display: block;
+    }
+
+    .hi_main {
+      display: none;
+    }
+
+    .txt-wrapp {
+      position: absolute;
+      bottom: 26%;
+      left: 3%;
+      width: 100%;
+    }
+
+    .hide_992 {
+      display: none;
+    }
+
+    @media all and (max-width: 864.9px) {
+
+      .txt-wrapp {
+        position: absolute;
+        bottom: 20%;
+        left: 3%;
+        width: 100%;
+      }
+    }
+
+    @media all and (max-width: 798px) {
+      .nav {
+        display: block;
+      }
+
+      .nav-tabs {
+        border-bottom: 1px solid #fff;
+      }
+    }
+
+    @media all and (max-width: 780.9px) {
+      .display {
+        display: none;
+      }
+
+      .not_display {
+        display: block;
+      }
+
+      .display_2 {
+        display: none;
+      }
+
+      .not_display {
+        display: block;
+      }
+
+      .txt-wrapp {
+        position: absolute;
+        bottom: 18%;
+        left: 3%;
+        width: 100%;
+      }
+    }
+
+
+    @media all and (max-width: 720.9px) {
+      .sh_m_992 {
+        display: none;
+      }
+
+      .hi_main {
+        display: none;
+      }
+
+      .sh_m_720 {
+        display: block;
+      }
+
+      .txt-wrapp {
+        position: absolute;
+        bottom: 30%;
+        left: 3%;
+        width: 100%;
+      }
+    }
+
+    @media all and (max-width: 660.9px) {
+      .txt-wrapp {
+        position: absolute;
+        bottom: 27%;
+        left: 3%;
+        width: 100%;
+      }
+    }
+
+    @media all and (max-width: 590.9px) {
+      .txt-wrapp {
+        position: absolute;
+        bottom: 29%;
+        left: 3%;
+        width: 100%;
+      }
+
+      .h2,
+      h2 {
+        font-size: 1.5rem !important;
+      }
+
+      .h1,
+      h1 {
+        font-size: 2rem !important;
+      }
+    }
+
+    @media all and (max-width: 520.9px) {
+
+      .divider_2 {
+        margin-bottom: 4em;
+      }
+
+      .margin_white_arrow {
+        margin: 2rem auto 0rem auto;
+      }
+
+      .padding_white_arrow {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+
+      .padding_white_arrow_g {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+
+      .divider_case {
+        margin-bottom: 1em;
+      }
+
+      .h2,
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .h4,
+      h4 {
+        font-size: 1.15rem;
+      }
+
+      .display {
+        display: none;
+      }
+
+      .display_2 {
+        display: none;
+      }
+
+      .not_display {
+        display: block;
+      }
+    }
+
+    @media all and (max-width: 480.9px) {
+      .nomob_350 {
+        display: none;
+      }
+
+      .mob_350 {
+        display: none;
+      }
+
+      .mob_720 {
+        display: none;
+      }
+
+      .mob_480 {
+        display: block;
+      }
+
+      .txt-wrapp {
+        position: absolute;
+        bottom: 27%;
+        left: 3%;
+        width: 100%;
+      }
+    }
+
+    @media all and (max-width: 460.9px) {
+
+      .txt-wrapp {
+        position: absolute;
+        bottom: 25%;
+        left: 3%;
+        width: 100%;
+      }
+    }
+
+    @media all and (max-width: 420.9px) {
+
+      .h2,
+      h2 {
+        font-size: 1.4rem !important;
+      }
+
+      .h1,
+      h1 {
+        font-size: 1.7rem !important;
+      }
+    }
+
+    @media all and (max-width: 380.9px) {
+
+      .h2,
+      h2 {
+        font-size: 1.3rem !important;
+      }
+
+      .h1,
+      h1 {
+        font-size: 1.6rem !important;
+      }
+
+      .nomob_350 {
+        display: none;
+      }
+
+      .mob_350 {
+        display: none;
+      }
+
+      .mob_720 {
+        display: none;
+      }
+
+      .mob_480 {
+        display: none;
+      }
+
+      .mob_380 {
+        display: block;
+      }
+
+    }
+
+    @media all and (max-width: 350.9px) {
+      .nomob_350 {
+        display: none;
+      }
+
+      .mob_350 {
+        display: none;
+      }
+
+      .mob_720 {
+        display: none;
+      }
+
+      .mob_480 {
+        display: none;
+      }
+
+      .mob_380 {
+        display: block;
+      }
+
+    }
+</style>
+<div class="container-fluid" style="max-width: 1600px;">
+  <div class="row justify-content-center">
+    <div class="container-fluid no-gutters hid_1200">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <nav class="navbar navbar-expand-xl navbar-light"><a class="navbar-brand" href="https://www.blizko.ru/" target="_blank"><img alt="BLIZKO" class="img-fluid logo margin_logo"
+                src="https://st28.stblizko.ru/images/useful_links/000/093/014_original.png" /> </a><button aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler collapsed"
+              data-target="#navbarColor01" data-toggle="collapse" type="button">&equiv;</button>
+            <div class="navbar-collapse collapse d-flex justify-content-end" id="navbarColor01" style="">
+              <form class="form-inline">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item"><a class="nav-link blue_b" href="https://www.blizko.ru/company_wizard/new" target="_blank">Добавить компанию</a></li>
+                  <li class="nav-item"><a class="nav-link orange_b" href="https://www.blizko.ru/about/reklama/order_call" target="_blank">Заказать звонок</a></li>
+                  <li class="nav-item"><a class="nav-link orange" href="tel:88007000-191" target="_blank"><img alt="телефон" src="https://st28.stblizko.ru/images/useful_links/000/093/015_original.png" style="max-width: 2.2rem;" />8(800)7000-191</a>
+                  </li>
+                </ul>
+              </form>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid no-gutters sh_1200">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <nav class="navbar navbar-expand-xl navbar-light"><a class="navbar-brand" href="https://www.blizko.ru/" target="_blank"><img alt="BLIZKO" class="img-fluid logo margin_logo"
+                src="https://st28.stblizko.ru/images/useful_links/000/093/014_original.png" /> </a><button aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler collapsed"
+              data-target="#navbarColor02" data-toggle="collapse" type="button">&equiv;</button>
+
+            <div class="navbar-collapse collapse" id="navbarColor02" style="">
+              <form class="form-inline" style="margin-bottom: 0px !important;">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item"><a class="nav-link blue_b" href="https://www.blizko.ru/company_wizard/new" target="_blank">Добавить компанию</a></li>
+                  <li class="nav-item"><a class="nav-link orange_b" href="https://www.blizko.ru/about/reklama/order_call" target="_blank">Заказать звонок</a></li>
+                  <li class="nav-item"><a class="nav-link orange" href="tel:88007000-191" target="_blank"><img src="https://st28.stblizko.ru/images/useful_links/000/093/015_original.png" style="max-width: 2.2rem;" />8(800)7000-191</a></li>
+                </ul>
+              </form>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid hi_main">
+      <div class="row">
+        <div class="col-12 img-wrap no-gutters"><img class="img-fluid bckg-img1" src="https://st32.stblizko.ru/images/useful_links/000/093/544_original.png" />
+          <div class="txt-wrapp">
+            <h1 class="white"><b>Медийная реклама<br />
+                на BLIZKO</b></h1>
+
+            <h2 style="color: #ffffff !important;">расскажет целевой аудитории<br />
+              о вашей компании</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid sh_m_992">
+      <div class="row">
+        <div class="col-12 img-wrap no-gutters"><img class="img-fluid bckg-img1" src="https://st34.stblizko.ru/images/useful_links/000/093/694_original.png" />
+          <div class="txt-wrapp">
+            <h1 class="white"><b>Медийная реклама<br />
+                на BLIZKO</b></h1>
+
+            <h2 style="color: #ffffff !important;">расскажет целевой аудитории<br />
+              о вашей компании</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid sh_m_720">
+      <div class="row">
+        <div class="col-12 img-wrap no-gutters"><img class="img-fluid bckg-img1" src="https://st34.stblizko.ru/images/useful_links/000/093/695_original.png" />
+          <div class="txt-wrapp">
+            <h1 class="white"><b>Медийная реклама<br />
+                на BLIZKO</b></h1>
+
+            <h2 style="color: #ffffff !important;">расскажет целевой аудитории<br />
+              о вашей компании</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid margin_white_arrow" id="descr">
+      <div class="row justify-content-center">
+        <div class="col-xl-9 col-lg-9 col-md-10 col-sm-10 col-10">
+          <div class="row display">
+            <div class="col-12 display">
+              <div class="row">
+                <div class="col-auto hide_992"><img alt="" class="img-fluid" src="https://st32.stblizko.ru/images/useful_links/000/093/545_original.png" /></div>
+
+                <div class="col-xl-9 col-lg-9 col-md-10 col-sm-10 col-12">
+                  <h2 class="display_2">Преимущества медийной рекламы на торговой площадке BLIZKO</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="not_display">Преимущества</h2>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-12 divider"></div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-xl-9 col-lg-9 col-md-10 col-sm-10 col-10">
+          <h4>Размещая медийную рекламу на BLIZKO, вы получаете:</h4>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-12 divider_4"></div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-12 divider">
+          <div class="row justify-content-center">
+            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-1 d-flex justify-content-end no-gutters"></div>
+
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-10">
+              <div class="row justify-content-center">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-10 col-12 d-flex justify-content-center" style="margin-bottom: 1.5em;">
+                  <div class="card card_shadow" style="max-width: 18rem;  display: block;">
+                    <div class="w_50"><img alt="" class="img-fluid card-img-top" src="https://st34.stblizko.ru/images/useful_links/000/093/643_original.png" style="max-width: 54px;" /></div>
+
+                    <div class="card-body">
+                      <p class="card-text text-center">широкий охват аудитории рекламным сообщением</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-10 col-12 d-flex justify-content-center" style="margin-bottom: 1.5em;">
+                  <div class="card card_shadow" style="max-width: 18rem;  display: block;">
+                    <div class="w_50"><img alt="" class="img-fluid card-img-top" src="https://st34.stblizko.ru/images/useful_links/000/093/644_original.png" style="max-width: 54px;" /></div>
+
+                    <div class="card-body">
+                      <p class="card-text text-center">целевых покупателей в свой онлайн-магазин</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-10 col-12 d-flex justify-content-center" style="margin-bottom: 1.5em;">
+                  <div class="card card_shadow" style="max-width: 18rem;  display: block;">
+                    <div class="w_50"><img alt="" class="img-fluid card-img-top" src="https://st34.stblizko.ru/images/useful_links/000/093/645_original.png" style="max-width: 54px;" /></div>
+
+                    <div class="card-body">
+                      <p class="card-text text-center">эффективную стоимость контакта</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-1 d-flex justify-content-end no-gutters"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-xl-9 col-lg-9 col-md-10 col-sm-10 col-10 divider">
+          <h4>Выберите медийные инструменты для продвижения в {region:variable(region_name_prepositional)}</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" id="descr">
+      <div class="row justify-content-center">
+        <div class="col-xl-9 col-lg-9 col-md-10 col-sm-10 col-10">
+          <ul class="nav nav-tabs mb-3" id="tab-tab" role="tablist">
+            <li class="nav-item"><a aria-controls="tab-home" aria-selected="true" class="nav-link active" data-toggle="pill" href="#tab-home" id="tab-home-tab" role="tab">Сквозное размещение</a></li>
+            <li class="nav-item"><a aria-controls="tab-profile" aria-selected="false" class="nav-link" data-toggle="pill" href="#tab-profile" id="tab-profile-tab" role="tab">Продвижение в рубрике</a></li>
+            <li class="nav-item"><a aria-controls="tab-contact" aria-selected="false" class="nav-link" data-toggle="pill" href="#tab-contact" id="tab-contact-tab" role="tab">Брендирование рубрики</a></li>
+          </ul>
+
+          <div class="tab-content" id="tab-tabContent">
+            <div aria-labelledby="tab-home-tab" class="tab-pane fade show active" id="tab-home" role="tabpanel">
+              <div class="row justify-content-center">
+                <div class="col-12 divider_4"></div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-12 col-lg-10 col-md-10 col-sm-12 col-12">
+                  <div class="row display">
+                    <div class="col-12">
+                      <div class="row">
+                        <div class="col-auto hide_992"><img alt="" class="img-fluid" src="https://st32.stblizko.ru/images/useful_links/000/093/545_original.png" /></div>
+
+                        <div class="col-xl-9 col-lg-9 col-md-10 col-sm-10 col-12">
+                          <h2 class="display_2 divider">Сквозное размещение</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <h2 class="not_display divider">Сквозное размещение</h2>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <p>Расскажет о вашей компании, товарах или акциях всем посетителям BLIZKO в вашем городе или регионе. Рекламный баннер размещается в самом верху экрана почти на всех страницах площадки: страницах каталога с товарами и услугами
+                    компаний, на карточках товаров, на страницах бесплатных компаний.</p>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <div class="row justify-content-center">
+                    <div class="col-xl-12 col-lg-10 col-md-10 col-sm-12 col-12 col-lg-12 col-md-12 col-sm-10 col-12">
+                      <ul>
+                        <li style="margin-left:2rem; color:#3A96FF; font-size: 1.5rem; padding-bottom: 0.5rem;"><span class="txt_bl"><strong>Максимальный охват - ваш баннер увидят все посетители BLIZKO</strong>.</span></li>
+                        <li style="margin-left:2rem; color:#3A96FF; font-size: 1.5rem; padding-bottom: 0.5rem;"><span class="txt_bl"><strong>Высокая частота контакта - покажем баннер на 96% страниц площадки BLIZKO</strong>.</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <p>На BLIZKO есть два варианта сквозного размещения:</p>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-12 divider"></div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <h5 class="h5_txt">Сквозное размещение на позиции &laquo;Транспарант&raquo;</h5>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-12 divider_img"></div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <div class="row justify-content-center">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-10 col-12"><img alt="" class="img-fluid" src="https://st32.stblizko.ru/images/useful_links/000/093/525_original.png" />
+                      <p class="p_3col_img">в рубрике</p>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-10 col-12"><img alt="" class="img-fluid" src="https://st32.stblizko.ru/images/useful_links/000/093/526_original.png" />
+                      <p class="p_3col_img">на карточке товара</p>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-10 col-12"><img alt="" class="img-fluid" src="https://st32.stblizko.ru/images/useful_links/000/093/527_original.png" />
+                      <p class="p_3col_img">на бесплатных сайтах</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-12 divider"></div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <h5 class="h5_txt">Сквозное размещение на позиции &laquo;Небоскреб 1&raquo;</h5>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-12 divider_img"></div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <div class="row justify-content-center">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-10 col-12"><img alt="" class="img-fluid" src="https://st32.stblizko.ru/images/useful_links/000/093/528_original.png" />
+                      <p class="p_3col_img">в рубрике</p>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-10 col-12"><img alt="" class="img-fluid" src="https://st32.stblizko.ru/images/useful_links/000/093/529_original.png" />
+                      <p class="p_3col_img">на карточке товара</p>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-10 col-12"><img alt="" class="img-fluid" src="https://st32.stblizko.ru/images/useful_links/000/093/530_original.png" />
+                      <p class="p_3col_img">на бесплатных сайтах</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <table class="table marg-tab">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th class="no_border" scope="col">Ротация 100%</th>
+                        <th class="no_border" scope="col">Ротация 50%</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>₽/мес</td>
+                        <td>₽/мес</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <hr />
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12" style="margin-bottom: 2.5em;">
+                  <ul>
+                    <li class="no_decor">Минимальный срок размещения - 1 месяц</li>
+                    <li class="no_decor">Варианты размещения: Транспарант или Небоскреб 1</li>
+                    <li class="no_decor">Версия: ПК</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div aria-labelledby="tab-profile-tab" class="tab-pane fade" id="tab-profile" role="tabpanel">
+              <div class="row justify-content-center">
+                <div class="col-12 divider_4"></div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-12 col-lg-10 col-md-10 col-sm-12 col-12">
+                  <div class="row display">
+                    <div class="col-12">
+                      <div class="row">
+                        <div class="col-auto hide_992"><img alt="" class="img-fluid" src="https://st32.stblizko.ru/images/useful_links/000/093/545_original.png" /></div>
+
+                        <div class="col-xl-9 col-lg-9 col-md-10 col-sm-10 col-12">
+                          <h2 class="display_2 divider">Баннеры в рубриках каталогов товаров и услуг торговой площадки BLIZKO</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <h2 class="not_display divider">Баннеры в рубриках каталогов товаров и услуг торговой площадки BLIZKO</h2>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <p>Баннеры в рубриках позволяют охватить ваших целевых покупателей. Они пришли на BLIZKO из поисковых систем по запросам &laquo;купить&hellip;&raquo;, &laquo;цена&hellip;&raquo;, &laquo;заказать &hellip;&raquo; и т.д., в поисках
+                    товаров и услуг вашего рынка. Вы можете привлечь этих покупателей из каталогов площадки в свой онлайн-магазин.</p>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-12 divider"></div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <h5 class="h5_txt">Транспарант</h5>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12 gradient_persik">
+                  <p class="margin-top_gr">Показывается пользователю на всех страницах каталога, относящихся к конкретной рубрике, вверху экрана.</p>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <div class="row justify-content-center">
+                    <div class="col-xl-12 col-lg-10 col-md-10 col-sm-12 col-12 col-lg-12 col-md-12 col-sm-10 col-12">
+                      <ul>
+                        <li style="margin-left:2rem; color:#3A96FF; font-size: 1.5rem; padding-bottom: 0.5rem;"><span class="txt_bl"><strong>Всегда в первом экране покупателя, располагается выше остальных объявлений</strong>.</span></li>
+                        <li style="margin-left:2rem; color:#3A96FF; font-size: 1.5rem; padding-bottom: 0.5rem;"><span class="txt_bl"><strong>Обеспечивает самый большой охват аудитории по сравнению с другими видами баннеров</strong>.</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-12 divider"></div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <div class="row justify-content-center">
+                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-10 col-12"><img alt="" class="img-fluid" src="https://st32.stblizko.ru/images/useful_links/000/093/531_original.png" /></div>
+
+                    <div class="col-xl-7 col-lg-7 col-md-7 col-sm-10 col-12">
+                      <table class="table marg-tab">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th class="no_border" scope="col">Рубрика</th>
+                            <th class="no_border" scope="col">Ротация 100%</th>
+                            <th class="no_border" scope="col">Ротация 50%</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Дом/Дача</td>
+                            <td>₽/мес</td>
+                            <td>₽/мес</td>
+                          </tr>
+                          <tr>
+                            <td>Здоровье</td>
+                            <td>₽/мес</td>
+                            <td>₽/мес</td>
+                          </tr>
+                          <tr>
+                            <td>Авто</td>
+                            <td>₽/мес</td>
+                            <td>₽/мес</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <hr />
+                  <ul>
+                    <li class="no_decor">Минимальный срок размещения - 2 месяца</li>
+                    <li class="no_decor">Версия: ПК</li>
+                    <li class="no_decor">Ротация: 100%, 50%</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-12 divider_3"></div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <h5 class="h5_txt">Небоскреб 1</h5>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12 gradient_persik">
+                  <p class="margin-top_gr">Показывается пользователю на всех страницах каталога, относящихся к конкретной рубрике, вверху экрана справа от товарного каталога.</p>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <div class="row justify-content-center">
+                    <div class="col-xl-12 col-lg-10 col-md-10 col-sm-12 col-12 col-lg-12 col-md-12 col-sm-10 col-12">
+                      <ul>
+                        <li style="margin-left:2rem; color:#3A96FF; font-size: 1.5rem; padding-bottom: 0.5rem;"><span class="txt_bl"><strong>Крупный баннер в первом экране покупателя, располагается выше остальных объявлений</strong>.</span></li>
+                        <li style="margin-left:2rem; color:#3A96FF; font-size: 1.5rem; padding-bottom: 0.5rem;"><span class="txt_bl"><strong>Обращает на себя внимание целевых покупателей за счет размера и расположения</strong>.</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-12 divider"></div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <div class="row justify-content-center">
+                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-10 col-12"><img alt="" class="img-fluid" src="https://st32.stblizko.ru/images/useful_links/000/093/532_original.png" /></div>
+
+                    <div class="col-xl-7 col-lg-7 col-md-7 col-sm-10 col-12">
+                      <table class="table marg-tab">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th class="no_border" scope="col">Рубрика</th>
+                            <th class="no_border" scope="col">Ротация 100%</th>
+                            <th class="no_border" scope="col">Ротация 50%</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Дом/Дача</td>
+                            <td>₽/мес</td>
+                            <td>₽/мес</td>
+                          </tr>
+                          <tr>
+                            <td>Здоровье</td>
+                            <td>₽/мес</td>
+                            <td>₽/мес</td>
+                          </tr>
+                          <tr>
+                            <td>Авто</td>
+                            <td>₽/мес</td>
+                            <td>₽/мес</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <hr />
+                  <ul>
+                    <li class="no_decor">Минимальный срок размещения - 2 месяца</li>
+                    <li class="no_decor">Версия: ПК</li>
+                    <li class="no_decor">Ротация: 100%, 50%</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-12 divider_3"></div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <h5 class="h5_txt">Небоскреб 2</h5>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12 gradient_persik">
+                  <p class="margin-top_gr">Показывается пользователю вверху экрана справа от товарного каталога на всех страницах каталога, относящихся к конкретной рубрике. Остается закрепленным на месте при движении вниз по каталогу</p>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <div class="row justify-content-center">
+                    <div class="col-xl-12 col-lg-10 col-md-10 col-sm-12 col-12 col-lg-12 col-md-12 col-sm-10 col-10">
+                      <ul>
+                        <li style="margin-left:2rem; color:#3A96FF; font-size: 1.5rem; padding-bottom: 0.5rem;"><span class="txt_bl"><strong>Крупный баннер, привлекающий внимание</strong>.</span></li>
+                        <li style="margin-left:2rem; color:#3A96FF; font-size: 1.5rem; padding-bottom: 0.5rem;"><span class="txt_bl"><strong>Удерживает внимание на вашем предложении за счет того, что остается на месте, когда покупатель листает
+                              каталог </strong>.</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-12 divider"></div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <div class="row justify-content-center">
+                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-10 col-12"><img alt="" class="img-fluid" src="https://st32.stblizko.ru/images/useful_links/000/093/533_original.png" /></div>
+
+                    <div class="col-xl-7 col-lg-7 col-md-7 col-sm-10 col-12">
+                      <table class="table marg-tab">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th class="no_border" scope="col">Рубрика</th>
+                            <th class="no_border" scope="col">Ротация 100%</th>
+                            <th class="no_border" scope="col">Ротация 50%</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Дом/Дача</td>
+                            <td>₽/мес</td>
+                            <td>{region:variable(MEDIA_price_DD_nebo_two_pyat)} ₽/мес</td>
+                          </tr>
+                          <tr>
+                            <td>Здоровье</td>
+                            <td>₽/мес</td>
+                            <td>₽/мес</td>
+                          </tr>
+                          <tr>
+                            <td>Авто</td>
+                            <td>₽/мес</td>
+                            <td>₽/мес</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <hr />
+                  <ul>
+                    <li class="no_decor">Минимальный срок размещения - 2 месяца</li>
+                    <li class="no_decor">Версия: ПК</li>
+                    <li class="no_decor">Ротация: 100%, 50%</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-12 divider_3"></div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <h5 class="h5_txt">Центральный 1,2</h5>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12 gradient_persik">
+                  <p class="margin-top_gr">Показываются пользователю в центре товарного каталога, на всех страницах каталога, относящихся к выбранной для размещения рубрике</p>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <div class="row justify-content-center">
+                    <div class="col-xl-12 col-lg-10 col-md-10 col-sm-12 col-12 col-lg-12 col-md-12 col-sm-10 col-10">
+                      <ul>
+                        <li style="margin-left:2rem; color:#3A96FF; font-size: 1.5rem; padding-bottom: 0.5rem;"><span class="txt_bl"><strong>Поможет выгодно выделить ваше предложение среди множества других в товарном каталоге</strong>.</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-12 divider"></div>
+              </div>
+
+              <div class="row justify-content-center divider">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <div class="row justify-content-center">
+                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-10 col-12"><img alt="" class="img-fluid" src="https://st32.stblizko.ru/images/useful_links/000/093/534_original.png" /></div>
+
+                    <div class="col-xl-7 col-lg-7 col-md-7 col-sm-10 col-12">
+                      <p><strong>Центральный 1</strong></p>
+
+                      <table class="table marg-tab">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th class="no_border" scope="col">Рубрика</th>
+                            <th class="no_border" scope="col">Ротация 100%</th>
+                            <th class="no_border" scope="col">Ротация 50%</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Дом/Дача</td>
+                            <td>₽/мес</td>
+                            <td>₽/мес</td>
+                          </tr>
+                          <tr>
+                            <td>Здоровье</td>
+                            <td>₽/мес</td>
+                            <td>₽/мес</td>
+                          </tr>
+                          <tr>
+                            <td>Авто</td>
+                            <td>₽/мес</td>
+                            <td>₽/мес</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12" />
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <div class="row justify-content-center">
+                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-10 col-12"><img alt="" class="img-fluid" src="https://st32.stblizko.ru/images/useful_links/000/093/534_original.png" /></div>
+
+                    <div class="col-xl-7 col-lg-7 col-md-7 col-sm-10 col-12">
+                      <p><strong>Центральный 2</strong></p>
+
+                      <table class="table marg-tab">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th class="no_border" scope="col">Рубрика</th>
+                            <th class="no_border" scope="col">Ротация 100%</th>
+                            <th class="no_border" scope="col">Ротация 50%</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Дом/Дача</td>
+                            <td>₽/мес</td>
+                            <td>₽/мес</td>
+                          </tr>
+                          <tr>
+                            <td>Здоровье</td>
+                            <td>₽/мес</td>
+                            <td>₽/мес</td>
+                          </tr>
+                          <tr>
+                            <td>Авто</td>
+                            <td>₽/мес</td>
+                            <td>₽/мес</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <hr />
+                  <ul>
+                    <li class="no_decor">Минимальный срок размещения - 2 месяца</li>
+                    <li class="no_decor">Версия: ПК</li>
+                    <li class="no_decor">Ротация: 100%, 50%</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-12 divider"></div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-12 divider_4"></div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-12 col-lg-10 col-md-10 col-sm-12 col-12">
+                  <div class="row display">
+                    <div class="col-12">
+                      <div class="row">
+                        <div class="col-auto hide_992"><img alt="" class="img-fluid" src="https://st32.stblizko.ru/images/useful_links/000/093/545_original.png" /></div>
+
+                        <div class="col-xl-9 col-lg-9 col-md-10 col-sm-10 col-12">
+                          <h2 class="display_2 divider">Приоритетные позиции для товаров и услуг в каталогах BLIZKO</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <h2 class="not_display divider">Приоритетные позиции для товаров и услуг в каталогах BLIZKO</h2>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-12 divider"></div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <h5 class="h5_txt">Суперприоритет</h5>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12 gradient_persik">
+                  <p class="margin-top_gr">Закрепленное первое место для вашего товара в рубрике. Всем посетителям рубрики BLIZKO ваш товар/услуга будет показываться в самом верху <strong>вне зависимости от пакета размещения вашей компании</strong>.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <div class="row justify-content-center">
+                    <div class="col-xl-12 col-lg-10 col-md-10 col-sm-12 col-12 col-lg-12 col-md-12 col-sm-10 col-12">
+                      <ul>
+                        <li style="margin-left:2rem; color:#3A96FF; font-size: 1.5rem; padding-bottom: 0.5rem;"><span class="txt_bl"><strong>Привлекает повышенное внимание к конкретному товару или услуге</strong>.</span></li>
+                        <li style="margin-left:2rem; color:#3A96FF; font-size: 1.5rem; padding-bottom: 0.5rem;"><span class="txt_bl"><strong>Работает на аудиторию рубрики, заинтересованную в конкретных товарах</strong>.</span></li>
+                        <li style="margin-left:2rem; color:#3A96FF; font-size: 1.5rem; padding-bottom: 0.5rem;"><span class="txt_bl"><strong>Быстрое размещение - за 1 день</strong>.</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-12 divider"></div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <div class="row justify-content-center">
+                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-10 col-12"><img alt="" class="img-fluid" src="https://st32.stblizko.ru/images/useful_links/000/093/539_original.png" /></div>
+
+                    <div class="col-xl-7 col-lg-7 col-md-7 col-sm-10 col-10">
+                      <table class="table marg-tab">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th class="no_border" scope="col">Рубрики/мес</th>
+                            <th class="no_border" scope="col">Стоимость</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>от 1 рубрики</td>
+                            <td>₽/мес</td>
+                          </tr>
+                          <tr>
+                            <td>от 3 рубрик</td>
+                            <td>₽/мес</td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                      <p style="font-size: 0.8rem;"><em>Стоимость за единицу размещения зависит от срока и количества рубрик. Подробности уточняйте у своего менеджера.</em></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <hr />
+                  <ul>
+                    <li class="no_decor">Минимальный срок размещения - 1 месяц</li>
+                    <li class="no_decor">Варианты размещения: 1 и/или 2 место товара в рубрике</li>
+                    <li class="no_decor">Версия: ПК, мобильная версия</li>
+                    <li class="no_decor">Ротация: всегда 100%</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-12 divider"></div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <h5 class="h5_txt">Витрина</h5>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12 gradient_persik">
+                  <p class="margin-top_gr">Текстово-графический баннер, расположен среди товаров/услуг в каталоге, выделен в общем блоке.</p>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <div class="row justify-content-center">
+                    <div class="col-xl-12 col-lg-10 col-md-10 col-sm-12 col-12 col-lg-12 col-md-12 col-sm-10 col-12">
+                      <ul>
+                        <li style="margin-left:2rem; color:#3A96FF; font-size: 1.5rem; padding-bottom: 0.5rem;"><span class="txt_bl"><strong>Продвигает конкретный товар / услугу / акцию</strong>.</span></li>
+                        <li style="margin-left:2rem; color:#3A96FF; font-size: 1.5rem; padding-bottom: 0.5rem;"><span class="txt_bl"><strong>Расположение в товарном блоке помогает избежать &ldquo;рекламной слепоты&rdquo; покупателей, привлекает
+                              внимание</strong>.</span></li>
+                        <li style="margin-left:2rem; color:#3A96FF; font-size: 1.5rem; padding-bottom: 0.5rem;"><span class="txt_bl"><strong>Быстрое размещение - за 1 день</strong>.</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-12 divider"></div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <div class="row justify-content-center">
+                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-10 col-12"><img alt="" class="img-fluid" src="https://st32.stblizko.ru/images/useful_links/000/093/540_original.png" /></div>
+
+                    <div class="col-xl-7 col-lg-7 col-md-7 col-sm-10 col-12">
+                      <table class="table marg-tab">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th class="no_border" scope="col">Главная страница</th>
+                            <th class="no_border" scope="col">Рубрика</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>₽/мес</td>
+                            <td>₽/мес</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <hr />
+                  <ul>
+                    <li class="no_decor">Минимальный срок размещения - 1 месяц</li>
+                    <li class="no_decor">Варианты размещения: на главной странице площадки или в любой рубрике каталога BLIZKO</li>
+                    <li class="no_decor">Версия: ПК, мобильная версия</li>
+                    <li class="no_decor">Ротация: всегда 100%</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-12 divider"></div>
+              </div>
+            </div>
+
+            <div aria-labelledby="tab-contact-tab" class="tab-pane fade" id="tab-contact" role="tabpanel">
+              <div class="row justify-content-center">
+                <div class="col-12 divider_4"></div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-12 col-lg-10 col-md-10 col-sm-12 col-12">
+                  <div class="row display">
+                    <div class="col-12">
+                      <div class="row">
+                        <div class="col-auto hide_992"><img alt="" class="img-fluid" src="https://st32.stblizko.ru/images/useful_links/000/093/545_original.png" /></div>
+
+                        <div class="col-xl-9 col-lg-9 col-md-10 col-sm-10 col-12">
+                          <h2 class="display_2 divider">Брендирование рубрики</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <h2 class="not_display divider">Брендирование рубрики</h2>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <p>В целевой рубрике ваш бренд будет на лидерских позициях - два баннера и витрина на эксклюзивных условиях. Исключительное медийное присутствие в рубрике будет за вами, другие компании не смогут разместить свою рекламу в этой
+                    рубрике.</p>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <div class="row justify-content-center">
+                    <div class="col-xl-12 col-lg-10 col-md-10 col-sm-12 col-12 col-lg-10 col-md-10 col-sm-12 col-12 col-lg-12 col-md-12 col-sm-10 col-12">
+                      <ul>
+                        <li style="margin-left:2rem; color:#3A96FF; font-size: 1.5rem; padding-bottom: 0.5rem;"><span class="txt_bl"><strong>Охват максимально целевой аудитории, размещение в рубрике, где 100% покупателей интересуются товарами и
+                              услугами вашего рынка</strong>.</span></li>
+                        <li style="margin-left:2rem; color:#3A96FF; font-size: 1.5rem; padding-bottom: 0.5rem;"><span class="txt_bl"><strong>Максимальный захват внимания покупателей, в рубрике только ваша медийная реклама</strong>.</span></li>
+                        <li style="margin-left:2rem; color:#3A96FF; font-size: 1.5rem; padding-bottom: 0.5rem;"><span class="txt_bl"><strong>Разнообразие доступных медийных форматов в одной услуге:баннеры и витрина</strong>.</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <p>На BLIZKO есть два варианта брендирования рубрики.</p>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-12 divider"></div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <div class="row justify-content-center">
+                    <div class="col-12">
+                      <div class="row justify-content-center">
+                        <div class="col-xl-6 col-lg-6 col-md-10 col-sm-10 col-12">
+                          <div class="block">
+                            <h5 class="h5_txt text-center">Транспарант + Небоскреб 1 + витрина</h5>
+
+                            <div class="row justify-content-center">
+                              <div class="col-12 divider"></div>
+                            </div>
+
+                            <div class="row justify-content-center">
+                              <div class="col-xl-9 col-lg-9 col-md-10 col-sm-10 col-12"><img alt="" class="img-fluid" src="https://st32.stblizko.ru/images/useful_links/000/093/535_original.png" /></div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-10 col-sm-10 col-12">
+                          <div class="block">
+                            <h5 class="h5_txt text-center">Транспарант + Небоскреб 2 + витрина</h5>
+
+                            <div class="row justify-content-center">
+                              <div class="col-12 divider"></div>
+                            </div>
+
+                            <div class="row justify-content-center">
+                              <div class="col-xl-9 col-lg-9 col-md-10 col-sm-10 col-12"><img alt="" class="img-fluid" src="https://st32.stblizko.ru/images/useful_links/000/093/536_original.png" /></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row justify-content-center">
+                        <div class="col-12 divider"></div>
+                      </div>
+
+                      <div class="row justify-content-center">
+                        <div class="col-xl-11 col-lg-11 col-md-10 col-sm-10 col-12">
+                          <table class="table marg-tab">
+                            <thead class="thead-dark">
+                              <tr>
+                                <th class="no_border" scope="col">Рубрика</th>
+                                <th class="no_border" scope="col">Стоимость</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Красота</td>
+                                <td>0₽/мес</td>
+                              </tr>
+                              <tr>
+                                <td>Техника</td>
+                                <td>0₽/мес</td>
+                              </tr>
+                              <tr>
+                                <td>Одежда</td>
+                                <td>0₽/мес</td>
+                              </tr>
+                              <tr>
+                                <td>Интерьер</td>
+                                <td>0₽/мес</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-9 col-lg-9 col-md-10 col-sm-10 col-12">
+                  <hr />
+                  <ul>
+                    <li class="no_decor">Минимальный срок размещения: 3 месяца</li>
+                    <li class="no_decor">Варианты размещения: Транспарант + Небоскреб 1 + витрина</li>
+                    <li class="no_decor">Транспарант + Небоскреб 2 + витрина</li>
+                    <li class="no_decor">Версия: ПК</li>
+                    <li class="no_decor">Ротация: только 100%</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-12 divider"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid gray padding_white_arrow_g">
+      <div class="row justify-content-center">
+        <div class="col-xl-9 col-lg-9 col-md-10 col-sm-10 col-10">
+          <div class="row display">
+            <div class="col-12 display">
+              <div class="row">
+                <div class="col-auto hide_992"><img alt="" class="img-fluid" src="https://st32.stblizko.ru/images/useful_links/000/093/545_original.png" /></div>
+
+                <div class="col-xl-9 col-lg-9 col-md-10 col-sm-10 col-12">
+                  <h2 class="display_2">Хотите получить индивидуальную консультацию по медийному размещению на BLIZKO?</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="not_display">Хотите получить индивидуальную консультацию по медийному размещению на BLIZKO?</h2>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-12 divider"></div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-xl-9 col-lg-9 col-md-10 col-sm-10 col-10">
+          <h4>Оставьте заявку, мы поможем подобрать вид размещения под ваши бизнес-задачи</h4>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-12 divider"></div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <div class="row align-items-center">
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-1 d-flex justify-content-end no-gutters"></div>
+
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-10">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="row">
+                        <div class="form_img col-xl-3 col-lg-3 col-md-3 d-none d-sm-none d-md-block  d-lg-block d-xl-block"><img alt="" class="img-fluid" src="https://st32.stblizko.ru/images/useful_links/000/093/541_original.png" /></div>
+
+                        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12">
+                          <form action="https://docs.google.com/forms/d/e/1FAIpQLSfapSyx-5oD0VoFNL2AmRor5av-8546r8uTcbDnARQsSncHIA/formResponse">
+                            <div class="form-group"><input aria-describedby="i.desc.1747625032 i.err.1747625032" aria-label="Ваше имя" autocomplete="off" class="form-control" data-initial-dir="auto" data-initial-value="" dir="auto" id="name"
+                                jsname="YPqjbf" name="entry.2090751837" placeholder="Ваше имя" required="" tabindex="0" type="name" value="" /></div>
+
+                            <div class="form-group"><input aria-describedby="i.desc.314066080 i.err.314066080" aria-label="Телефон для связи" autocomplete="off" class="form-control" data-initial-dir="auto" data-initial-value="" dir="auto" for="Mytel"
+                                id="Mytel" jsname="YPqjbf" name="entry.1621463708" placeholder="Телефон" required="" tabindex="0" type="Mytel" value="" /></div>
+
+                            <div class="freebirdFormviewerViewItemsItemItem freebirdFormviewerViewItemsTextTextItem" data-item-id="763303898" jsaction="sPvj8e:e4JwSe,vwKRrd;" jscontroller="rDGJeb" jsname="ibnC6b" role="listitem"
+                              style="display: none;">
+                              <div class="freebirdFormviewerViewItemsItemItemHeader">
+                                <div class="freebirdFormviewerViewItemsItemItemTitleContainer">
+                                  <div aria-describedby="i.desc.763303898" aria-level="2" class="freebirdFormviewerViewItemsItemItemTitle" dir="auto" role="heading">ID компании</div>
+
+                                  <div class="freebirdFormviewerViewItemsItemItemHelpText" dir="auto" id="i.desc.763303898"></div>
+                                </div>
+                              </div>
+
+                              <div class="freebirdFormviewerViewItemsTextItemWrapper" style="/* display: none; */">
+                                <div class="quantumWizTextinputPaperinputEl freebirdFormviewerViewItemsTextShortText freebirdThemedInput" jsaction="clickonly:KjsqPd; focus:Jt1EX; blur:fpfTEe; input:Lg5SV;" jscontroller="pxq3x" jsname="W85ice"
+                                  jsshadow="">
+                                  <div class="quantumWizTextinputPaperinputMainContent exportContent">
+                                    <div class="quantumWizTextinputPaperinputContentArea">
+                                      <div class="quantumWizTextinputPaperinputInputArea"><input aria-describedby="i.desc.763303898 i.err.763303898" aria-label="ID компании" autocomplete="off" class="quantumWizTextinputPaperinputInput exportInput"
+                                          data-initial-dir="auto" data-initial-value="" dir="auto" jsname="YPqjbf" name="entry.1672840594" tabindex="0" type="text" value="14424517" /></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="btn btn-warning" style="width: 100%; background-color: #3A96FF; color: #fff; border-color: #3A96FF;" type="submit">Отправить заявку</button><small class="form-text text-muted">Нажимая на кнопку, вы даете
+                              согласие на обработку персональных данных в соответствии с <a href="https://www.blizko.ru/privacy_policy" style="color:#3A96FF;" target="_blank">политикой конфиденциальности</a> и принимаете условия <a
+                                href="https://www.blizko.ru/terms" style="color:#3A96FF;" target="_blank">пользовательского соглашения</a></small>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid footer">
+      <div class="row">
+        <div class="col-12 margin_white_arrow">
+          <div class="row justify-content-center">
+            <div class="col-xl-9 col-lg-9 col-md-10 col-sm-10 col-10">
+              <div class="row">
+                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-8 col-12">
+                  <div class="row">
+                    <div class="col-12" style="padding-bottom:15px;"><span class="white card_otstyp"><a class="white h6" href="https://www.blizko.ru/" target="_blank">На главную страницу</a></span></div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12" style="padding-bottom:15px;"><span class="white card_otstyp"><a class="white h6" href="https://www.blizko.ru/terms" target="_blank">Пользовательское соглашение</a></span></div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12" style="padding-bottom:15px;"><span class="white card_otstyp"><a class="white h6" href="https://www.blizko.ru/about/response" target="_blank">Отзывы</a></span></div>
+                  </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 col-12">
+                  <div class="row">
+                    <div class="col-12" style="padding-bottom: 8px;"><a class="h6 white btn_txt" href="tel:88007000191" target="_blank"><img alt="" class="cont_icon_2"
+                          src="https://st28.stblizko.ru/images/useful_links/000/093/067_original.png" /><u>8(800)7000-191</u></a></div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12" style="padding-bottom: 8px;"><a class="h6 white btn_txt" href="mailto:spravka@blizko.ru" target="_blank"><img alt="" class="cont_icon_2"
+                          src="https://st28.stblizko.ru/images/useful_links/000/093/068_original.png" /><u>spravka@blizko.ru</u></a></div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12" style="padding-bottom: 8px;">
+                      <ul class="contacts" style="padding-top:15px;">
+                        <li class="icons_footer"><a href="https://www.facebook.com/blizkobusiness" target="_blank"><img alt="" class="cont_icon" src="https://st28.stblizko.ru/images/useful_links/000/093/063_original.png" /></a></li>
+                        <li class="icons_footer"><a href="https://www.youtube.com/user/BlizkoBusiness" target="_blank"><img alt="" class="cont_icon" src="https://st28.stblizko.ru/images/useful_links/000/093/064_original.png" /></a></li>
+                        <li class="icons_footer"><a href="https://vk.com/blizkobusiness" target="_blank"><img alt="" class="cont_icon" src="https://st28.stblizko.ru/images/useful_links/000/093/065_original.png" /></a></li>
+                        <li class="icons_footer"><a href="https://zen.yandex.ru/id/5f23dc3cb81d304d2406271b" target="_blank"><img alt="" class="cont_icon" src="https://st28.stblizko.ru/images/useful_links/000/093/066_original.png" /></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p style="display: none;"></p>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>

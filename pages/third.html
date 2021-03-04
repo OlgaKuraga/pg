@@ -1,0 +1,980 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+            
+@import url("https://fonts.googleapis.com/css2?family=Exo+2&display=swap");
+html, body{
+    overflow-x: hidden;
+}
+.card-text{
+font-size: 14px;
+line-height: 18px;
+}        
+body{
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #FAFAFA;
+    color: #454545;
+    font-weight: 300;
+
+}
+.navbar {
+padding: 15px 10px;
+}
+.navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: .25rem;
+} 
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+}        
+.navbar-light .navbar-toggler {
+color: #ffffff;
+border-color: #FF6600;
+background-color: #FF6600;
+}
+h1 {
+background: none !important;
+padding-left: 0px !important;
+}
+        
+.navbar-toggler {
+padding: .25rem .75rem;
+}
+.wrapper {
+    width: 100% !important;
+}
+.label_p{
+    font-size: 0.8rem;
+    line-height: 1.05rem;
+    color:#454545;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 10%;
+}        
+.card {
+    border: none;
+}
+.card_marg_top{
+  margin-top: 20px;
+}        
+.black{
+    background-color: #454545;
+}
+.white{
+    background-color: #ffffff;
+}
+.white_border{
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.csrous{
+    margin-bottom: 7%;
+}
+.box{
+    -webkit-box-shadow: 10px 10px 41px 3px rgba(69,69,69,0.15);
+    -moz-box-shadow: 10px 10px 41px 3px rgba(69,69,69,0.15);
+    box-shadow: 10px 10px 41px 3px rgba(69,69,69,0.15);
+}
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+.menu_container_blcok{
+    margin: 0%  2% 2% 2%;
+}
+.menu_container{
+    margin: 2% 2%;
+}
+.menu_container_2{
+    margin: 2% 2% 5% 2%;
+}        
+.menu_container_number{
+    margin: 0.5% 2%;
+}        
+.container_gutter{
+    margin: 5% 2% 3% 2%;
+}
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-right: .9rem;
+    padding-left: .9rem;
+}
+.orange_button{
+    background-color: #FF6600;
+    padding: 15px 20px;
+    color:#ffffff;
+    border: 1px solid #FF6600;
+    border-radius: 3px;
+}
+.orange_button:hover{
+    background-color: coral;
+}
+.brand_color{
+    background-color: #FCB127;
+    height: 20px;
+}
+.divider{
+    padding: 20px 0px;
+}
+.pargh{
+color: #454545;
+}
+.li_padd {
+    padding-top: 0.1%;
+}        
+.divider_h2{
+    margin-top: 5%;
+}
+.divider_h3{
+    margin-top: 2.5%;
+}
+.divider_bottom{
+    margin-bottom: 2.5%;
+}
+.divider_form{
+    margin-top: 10%;
+}
+.container_mar_pad{
+    padding: 3% 0%;
+}
+.center{
+    margin: auto;
+}
+.dots{
+    padding-right: 10px;
+} 
+.list_divider{
+    margin-top: 1.5%;
+}
+.carous_divider{
+    margin-top: 1.5%;
+    margin-bottom: 5%;
+
+}
+.carousel-caption {
+    color: #454545;
+    text-align: left;
+}
+.border{
+    border: none;
+    border-radius: 5px;
+}
+.p_table{
+   padding: 4% 5%; 
+}
+.p_table_2{
+   padding: 2% 5% 1% 5%; 
+}
+.p_table_3{
+   padding: 0.5% 5% 2% 5%; 
+}
+.m_w{
+    max-width: 600px;
+}
+.li_number{
+    padding-top: .9rem;
+}        
+/*-----------------------градиент-----------------------*/
+
+.container_gradient_mar_pad{
+    padding: 2% 0%;
+}
+
+.gradient{
+    margin: 2% auto;
+    background: linear-gradient(90deg, #FFF6D6 0%, rgba(255, 246, 214, 0) 79.17%);
+}
+.gradient_blue{
+    margin: 2% auto;
+    background: linear-gradient(87deg, rgba(255,255,255,0) 0%, rgba(199,236,255,1) 100%);
+}
+.text_align{
+    padding-left: 3%;
+}
+.blue{
+    color: #FF6600;
+}
+/*-------------------------текст ----------------------*/
+a{
+    color: #454545;
+}
+a:hover{
+    color: #FF6600;
+}
+.h1{
+    font-size: 70px;
+    line-height: 75px;
+    color: #454545;
+    font-weight: 500;
+}
+.h2{
+    font-size: 44px;
+    line-height: 52px;
+    color: #FCB127;
+    font-weight: 400;
+}
+
+p, li {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 32px;
+}
+        
+.h3{
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+}
+.h4{
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 32px;
+}
+.li_bl {
+    color: #FF6600;
+    font-size: 32px;
+}        
+.label_p{
+    font-size: 14px;
+    line-height: 20px;
+    color: #454545;
+    font-weight: 300;
+}
+.p_carus{
+    font-size: 16px;
+}
+.orange{
+     color: #FF6600;
+}
+
+/*------------------------------форма------------------------------*/
+.ufive-feedback { 
+  font-size: 42.5%; 
+  font-family: "Exo 2", sans-serif; 
+  font-weight: 600; 
+} 
+
+.ufive-feedback section { 
+  background: #FFFFFF; 
+  margin: 60px auto 50px; 
+  text-align: center; 
+  padding: 0px 0 50px; 
+  width: 80%; 
+  max-width: 1100px; 
+} 
+
+.ufive-feedback section h5 { 
+  margin-bottom: 40px; 
+  line-height: 1.7em;
+  text-transform: uppercase; 
+  font-family: "Exo 2", sans-serif; 
+  font-weight: 400; 
+  color: #ffffff;
+  background-color: #454545;
+  padding: 10px 30px;
+} 
+
+.ufive-feedback form { 
+  width: 58.3333333333%; 
+  margin: 0 auto; 
+  color: #454545; 
+} 
+
+.ufive-feedback form .field { 
+  width: 100%; 
+  position: relative; 
+  margin-bottom: 11%; 
+  color: #FF6600;
+} 
+
+.ufive-feedback form .field label { 
+  text-align: left;
+  text-transform: uppercase; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  background: #F0F0F0; 
+  width: 100%; 
+  padding: 18px 0; 
+  font-size: 2em; 
+  letter-spacing: 0.075em; 
+  -webkit-transition: all 333ms ease-in-out; 
+  -moz-transition: all 333ms ease-in-out; 
+  -o-transition: all 333ms ease-in-out; 
+  -ms-transition: all 333ms ease-in-out; 
+  transition: all 333ms ease-in-out; 
+} 
+.navbar-dark .navbar-nav .nav-link {
+    color: #FF6600;
+}
+.nav-link:hover{
+    color: #FF6600 !important;
+}       
+.btn-primary {
+    color: #fff;
+    background-color: #FF6600 !important;
+    border-color: #FF6600 !important;
+}        
+.ufive-feedback form .field label + span { 
+  opacity: 0; 
+  color: white; 
+  display: block; 
+  position: absolute; 
+  top: 12px; 
+  left: 7%; 
+  font-size: 2.5em; 
+  text-shadow: 1px 2px 0 #cd6302; 
+  -webkit-transition: all 333ms ease-in-out; 
+  -moz-transition: all 333ms ease-in-out; 
+  -o-transition: all 333ms ease-in-out; 
+  -ms-transition: all 333ms ease-in-out; 
+  transition: all 333ms ease-in-out; 
+} 
+
+.ufive-feedback form .field input[type="text"], 
+form .field textarea { 
+  border: none; 
+  background: #393939; 
+  width: 80.5%; 
+  font-family: "Exo 2", sans-serif; 
+  margin: 0; 
+  padding: 18px 0; 
+  padding-left: 19.5%; 
+  color: #fff; 
+  font-size: 1.4em; 
+  letter-spacing: 0.05em; 
+  text-transform: uppercase; 
+} 
+
+.ufive-feedback form .field input[type="text"]#msg, 
+form .field textarea#msg { 
+  height: 12px; 
+  resize: none; 
+  font-size: 10px; 
+  font-family: "Exo 2", sans-serif; 
+  -webkit-transition: all 333ms ease-in-out; 
+  -moz-transition: all 333ms ease-in-out; 
+  -o-transition: all 333ms ease-in-out; 
+  -ms-transition: all 333ms ease-in-out; 
+  transition: all 333ms ease-in-out; 
+} 
+
+.ufive-feedback form .field input[type="text"]:focus, 
+form .field input[type="text"].focused, 
+form .field textarea:focus, 
+form .field textarea.focused { 
+  outline: none; 
+  color: #FF6600; 
+  font-family: "Exo 2", sans-serif; 
+} 
+
+.ufive-feedback form .field input[type="text"]:focus#msg, 
+form .field input[type="text"].focused#msg, 
+form .field textarea:focus#msg, 
+form .field textarea.focused#msg { 
+  padding-bottom: 150px; 
+  font-size: 10px; 
+  font-family: "Exo 2", sans-serif; 
+} 
+
+.ufive-feedback form .field input[type="text"]:focus + label, 
+form .field input[type="text"].focused + label, 
+form .field textarea:focus + label, 
+form .field textarea.focused + label { 
+  width: 18%; 
+  background: #393939; 
+  color: #fff; 
+} 
+
+.ufive-feedback form .field input[type="text"].focused + label, 
+form .field textarea.focused + label { 
+  color: #fff; 
+} 
+
+.ufive-feedback form .field:hover label { 
+  width: 18%; 
+  background: #FF6600; 
+  color: #393939; 
+} 
+
+.ufive-feedback form input[type="submit"] { 
+  background: #FF6600; 
+  color: #ffffff; 
+  -webkit-appearance: none; 
+  border: none; 
+  text-transform: uppercase; 
+  position: relative; 
+  padding: 13px 50px; 
+  font-size: 22px; 
+  letter-spacing: 0.1em; 
+  font-family: "Exo 2", sans-serif; 
+  font-weight: 300; 
+  cursor: pointer; 
+    border-radius: 3px 3px 3px 3px;
+  -webkit-transition: all 333ms ease-in-out; 
+  -moz-transition: all 333ms ease-in-out; 
+  -o-transition: all 333ms ease-in-out; 
+  -ms-transition: all 333ms ease-in-out; 
+  transition: all 333ms ease-in-out; 
+} 
+
+.ufive-feedback form input[type="submit"]:hover { 
+  background: #393939; 
+  color: #FF6600; 
+} 
+
+.ufive-feedback form input[type="submit"]:focus { 
+  outline: none; 
+  background: #FF6600; 
+  color: #393939; 
+}
+.p_form {
+    background-color: #454545;
+    color: #ffffff;
+    padding: 3% 2% 6% 2%;
+}
+.mob_show{
+    display: none;
+    padding: 3% 0% 3% 0%;
+
+}
+@media (max-width: 1230px) { 
+.h1 {
+    font-size: 60px;
+    line-height: 70px;
+}
+.h2 {
+    font-size: 36px;
+    line-height: 44px;
+}    
+} 
+@media (max-width: 1150px) {  
+.mob_hide{
+     display: none !important;
+}
+.mob_show{
+     display: block !important;
+}
+.h1 {
+    font-size: 56px;
+    line-height: 64px;
+}
+}
+        
+@media (max-width: 767.9px) { 
+.hide_1199 {
+    display: none;
+}
+.navbar-expand-md .navbar-nav .nav-link {
+   padding-left: 0rem;
+}    
+}
+@media (max-width: 765px) { 
+.ufive-feedback form {
+    width: 100%; 
+    padding: 0px 30px;
+}
+
+.ufive-feedback section { 
+  width: 100%; 
+}
+}
+@media all and (max-width: 620px){
+.container_gutter {
+    margin: 7% 2% 5% 2%;
+}  
+.gradient{
+    margin: 7% auto;
+}
+.no-gutters {
+    padding-right: 25px;
+    padding-left: 25px;    
+}
+/*-------------------------текст ----------------------*/
+a{
+    color: #454545;
+}
+a:hover{
+    color: #FF6600;
+}
+.h1{
+    font-size: calc( (100vw - 460px)/(1280 - 460) * (70 - 30) + 50px);
+    line-height: calc( (100vw - 460px)/(1280 - 460) * (75 - 40) + 52px);
+}
+.h2{
+    font-size: calc( (100vw - 460px)/(1280 - 460) * (44 - 30) + 30px);
+    line-height: calc( (100vw - 460px)/(1280 - 460) * (52 - 35) + 42px);
+}
+
+p, .p{
+    font-size: calc( (100vw - 460px)/(1280 - 460) * (20 - 10) + 18px);
+    line-height: calc( (100vw - 460px)/(1280 - 460) * (28 - 20) + 30px);
+}
+.h3{
+    font-size: calc( (100vw - 460px)/(1280 - 460) * (28 - 10) + 22px);
+    line-height: calc( (100vw - 460px)/(1280 - 460) * (39 - 20) + 32px);
+}
+.h4{
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 32px;
+}
+.label_p{
+    font-size: 14px;
+    line-height: 20px;
+    color: #454545;
+    font-weight: 300;
+}
+.p_carus{
+    font-size: 16px;
+}
+} 
+@media (max-width: 470px){
+.h1 {
+    font-size: calc( (100vw - 460px)/(1280 - 460) * (70 - 30) + 40px);
+    line-height: calc( (100vw - 460px)/(1280 - 460) * (75 - 40) + 46px);
+}
+.h2 {
+    font-size: calc( (100vw - 460px)/(1280 - 460) * (44 - 30) + 28px);
+    line-height: calc( (100vw - 460px)/(1280 - 460) * (52 - 35) + 34px);
+}
+.h4 {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+}
+.ufive-feedback form input[type="submit"] {
+    padding: 13px 30px;
+    font-size: 14px;
+}    
+}
+</style>
+  </head>
+  <body>
+<div class="container-fluid no-gutters" style="max-width: 1800px;">  
+ <!--------меню и лого------>  
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+          <a class="navbar-brand" href="http://{region:name_lat}.blizko.ru/" target="_blank">
+            <img class="logo img-fluid" src="https://st28.stblizko.ru/images/useful_links/000/093/014_original.png" alt="BLIZKO" style="width: 120px;">
+          </a>
+          <meta itemprop="name" content="Торговая площадка BLIZKO">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerBLIZKO" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+           <div class="collapse navbar-collapse" id="navbarTogglerBLIZKO">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              </ul>
+              <ul class="navbar-nav my-2 my-lg-0">
+                 <li class="nav-item">
+                    <a class="nav-link orange_nav" href="tel:88007000191" target="_blank" style="font-size: 18px;"><img class="img-fluid hide_1199" src="https://st39.stblizko.ru/images/useful_links/000/094/393_original.png" alt="Телефон компании" style="margin-bottom: 5px;
+    padding-right: 5px;">8(800)7000-191</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="http://{region:name_lat}.blizko.ru/about/reklama/order_call" class="btn btn-primary btn-md active but_nav_margin but_or" role="button">Заказать звонок</a>
+                  </li>
+              </ul>
+           </div>
+        </nav>          
+<!--------меню и лого конец------>            
+<!--------линия цвета------>
+            <div class="container-fluid brand_color">
+                <div class="row">
+                   <div class="col-12">
+                        <span class="">
+                            
+                        </span>
+                    </div>
+                </div>
+            </div>
+<!--------линия цвета конец------>
+<!--------заголовок с картинкой------>      
+           <div class="container-fluid white no-gutters box mob_hide">
+                <div class="row">
+                    <div class="col-12 container_gutter_header">
+                        <div class="row align-items-center">
+                            <div class="col-lg-1 col-md-1 col-sm-1 d-none d-lg-block d-md-block d-sm-block">
+                                
+                            </div>
+                            <div class="col-12 col-sm-11 col-md-7 col-lg-7 col-xl-7 d-flex justify-content-start" >
+                               <div class="row">
+                                   <div class="col-12">
+                                       <h1 class="h1">
+                                            Акции на BLIZKO
+                                       </h1>
+                                       <h2 class="h2 divider_h2">
+                                          Ещё один эффективный инструмент продаж.
+                                       </h2>
+                                    </div>
+                                 </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-end">
+                                <img class="image-fluide" src="https://st17.stblizko.ru/images/useful_links/000/092/279_original.png" alt="BLIZKO">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container-fluid white no-gutters box mob_show">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 d-flex justify-content-start" >
+                       <div class="row">
+                           <div class="col-12">
+                               <h1 class="h1"> 
+                                    Акции на BLIZKO
+                               </h1>
+                               <h2 class="h2 divider_h2">
+                                   Ещё один эффективный инструмент продаж.
+                               </h2>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+<!--------заголовок с картинкой конец------> 
+<!--------серый фон_1------>                
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-11 col-md-12 col-lg-12 col-xl-12 container_gutter">
+                        <p class="">
+                            Покупатели всегда были чувствительны к изменению цены на товары и услуги, к которым они присматриваются. Многие из них добавляют товар в избранное и ждут, когда цена на него упадет до приемлемой, либо ищут магазин, где можно купить дешевле. Конкуренция на рынке стимулирует компании бороться за каждого покупателя всеми доступными методами. Проверенным и прибыльным инструментом продаж являются акции. С его помощью можно не только быстро привлечь покупателей и увеличить прибыль, но и решить другие бизнес-задачи.
+                        </p>
+                        <p class="">
+                            В этой статье речь пойдет о сервисе BLIZKO «Акции и скидки». Мы расскажем вам о преимуществах акций и какими они должны быть, чтобы заинтересовать больше покупателей.
+                        </p>
+                    </div>
+                </div>
+            </div>
+<!--------серый фон_конец------> 
+<!--------градиент фон--------->            
+             <div class="container-fluid white_border box">
+                <div class="row">
+                    <div class="col-12 gradient">
+                        <div class="row">
+                            <div class="container">
+                                <div class="row">
+                                   <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+                                        <h3 class="h3 orange menu_container">
+                                            Зачем размещать акции?
+                                        </h3>
+                                        <ol class="divider_h3 menu_container">
+                                            <li class="">Помогают избавиться от залежавшегося, сезонного ассортимента и освободить место для новых товаров.</li>
+                                            <li class="li_number">Рассказывают о новых товарах или услугах, вызывают к ним интерес и помогают продвижению новинок.</li>
+                                            <li class="li_number">Влияют на принятие решения о покупке. Если покупатель сомневается, то даже небольшая скидка поможет подтолкнуть его к покупке.</li>
+                                            <li>Позволяют привлечь новых покупателей и сохранить лояльность существующих. Для последних лучше работает индивидуальная система скидок.</li>
+                                            <li class="li_number">Выделяют ваши товары и услуги, создают конкурентное преимущество.</li>
+                                            <li class="li_number">Увеличивают процент повторных покупок, в случае, если предложить покупателю скидку на следующую покупку.</li>
+                                        </ol>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--------градиент фон_конец------>            
+ <!--------серый фон_1------> 
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-11 col-md-12 col-lg-12 col-xl-12 container_gutter">
+                        <h3 class="h3">
+                            Эффективная акция за пять шагов
+                        </h3>
+                        <p class="divider_h3">
+                           Для того, чтобы ваша акция привлекла как можно больше покупателей, ее надо правильно оформить. Мы собрали для вас несколько рекомендаций по созданию акций.
+                        </p>
+                        <ol class="divider_h3 menu_container">
+                            <li class="li_padd li_bl" type="square"><p class="pargh">Предложите скидку не менее 20% на популярный массовый товар/услугу или выгодный бонус за покупку.</p></li>
+                            <li class="li_padd li_bl" type="square"><p class="pargh">Обязательно укажите размер скидки (в % или в деньгах) или подробно опишите бонус/подарок, предлагаемый по акции.</p></li>
+                            <li class="li_padd li_bl" type="square"><p class="pargh">Расскажите об экономии и выгоде, которую получит покупатель. Не забудьте указать прежнюю и новую стоимость товара или услуги.</p></li>
+                            <li class="li_padd li_bl" type="square"><p class="pargh">Подробно опишите предлагаемый товар или услугу. Сделайте акцент на пользе, которую получает покупатель, ценности товара.</p></li>
+                            <li class="li_padd li_bl" type="square"><p class="pargh">Подберите яркую, красивую иллюстрацию к акции.</p></li>
+                        </ol>
+                        <p class="divider_h3">
+                          После публикации акциям присваивается один из статусов, который дает разные возможности для продвижения. Если вы оформите акцию, следуя этим рекомендациям, то на BLIZKO ей будет присвоен статус “Суперакция”.
+                        </p>
+                        <div class="block--questions" style="width: 100%; box-sizing: border-box;padding-top: 2em;">
+
+                        <div class="questions--ul" style="width: 80%; box-sizing: border-box; margin-left: 0; margin-right: auto;">
+                        <div class="wrapper--down" style="display: flex;">
+                        <div class="questions--title" style="width: 100%; box-sizing: border-box; text-align: left; margin-bottom: 20px;"><p style="color: #FF6600; font-weight: 500;">ОДОБРЕНО НА СК</p></div>
+
+                        <div class="down" onmouseout="this.style.backgroundColor='white';" onmouseover="this.style.backgroundColor='#FF6600';" style="width: 30px; height: 30px; border-radius: 50px; background-color: white; padding: 5px; font-size: 36px; box-sizing: border-box; line-height: 0.6; text-align: center; color: #FF6600; margin-right: 20px;"><a href="javascript:void(0)" onclick="var k='openStep'; document.getElementById(k).style.display=(document.getElementById(k).style.display=='none')?'block':'none';" style="text-decoration: none;color: #373737">+</a></div>
+                        </div>
+                        <span id="openStep" style="margin: 0px 0px 30px; padding: 0px; list-style: none; font-family: Roboto, Arial, sans-serif; font-size: 16px; line-height: 1.5; display: none;">
+                           Акция будет опубликована только нас сайте вашей компании.
+                        </span>
+                        <div class="wrapper--down" style="display: flex;">
+                        <div class="questions--title" style="width: 100%; box-sizing: border-box; text-align: left; margin-bottom: 20px;"><p style="color: #FF6600; font-weight: 500;">ВЫГОДНОЕ ПРЕДЛОЖЕНИЕ</p></div>
+
+                        <div class="down3" onmouseout="this.style.backgroundColor='white';" onmouseover="this.style.backgroundColor='#FF6600';" style="width: 30px; height: 30px; border-radius: 50px; background-color: white; padding: 5px;font-size: 36px;box-sizing: border-box;line-height: 0.6;text-align: center;color: #FF6600; margin-right: 20px;"><a href="javascript:void(0)" onclick="var c='threeStep'; document.getElementById(c).style.display=(document.getElementById(c).style.display=='none')?'block':'none';" style="text-decoration: none;color:#373737">+</a></div>
+                        </div>
+
+                        <span id="threeStep" style="margin: 0px 0px 30px; padding: 0px; list-style: none; font-family: Roboto, Arial, sans-serif; font-size: 16px; line-height: 1.5; display: none;">
+                           Акция публикуется на сайте компании, а также попадет в каталог торговой площадки и в раздел Акции и скидки. Там ее увидят заинтересованные покупатели из вашего города.
+                        </span>
+                        <div class="wrapper--down" style="display: flex;">
+                        <div class="questions--title" style="width: 100%; box-sizing: border-box; text-align: left; margin-bottom: 20px;"><p style="color: #FF6600; font-weight: 500;">СУПЕРАКЦИЯ</p></div>
+
+                        <div class="down3" onmouseout="this.style.backgroundColor='white';" onmouseover="this.style.backgroundColor='#FF6600';" style="width: 30px; height: 30px; border-radius: 50px; background-color: white; padding: 5px;font-size: 36px;box-sizing: border-box;line-height: 0.6;text-align: center;color: #FF6600; margin-right: 20px;"><a href="javascript:void(0)" onclick="var d='4Step'; document.getElementById(d).style.display=(document.getElementById(d).style.display=='none')?'block':'none';" style="text-decoration: none;color:#373737">+</a></div>
+                        </div>
+
+                        <span id="4Step" style="margin: 0px 0px 30px; padding: 0px; list-style: none; font-family: Roboto, Arial, sans-serif; font-size: 16px; line-height: 1.5; display: none;">
+                           Такие акции, помимо публикаций в перечисленных выше разделах, попадают в e-mail рассылку «Скидки от BLIZKO» для подписчиков-покупателей. <br>Это отличная возможность рассказать о себе потенциальным покупателям.
+                        </span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>                                   
+<!--------серый фон_конец------> 
+          
+<!--------градиент фон---------> 
+           <div class="container-fluid white_border box">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="container">
+                                <div class="menu_container_2">
+                                <div class="row">
+                                  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+                                        <h3 class="h3 orange" style="padding-top: 25px; padding-bottom: 15px;">
+                                            Cпециальные возможности сервиса Акции
+                                        </h3>
+                                    </div> 
+                                   <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 card_marg_top">
+                                       <div class="card" style="">
+                                        <img class="img-fluid" src="https://st39.stblizko.ru/images/useful_links/000/094/481_original.png" alt="Card image cap">
+                                         <div class="card-body">
+                                            <h5 class="card-title">Промокод</h5>
+                                            <p class="card-text">Команда BLIZKO постоянно совершенствует сервис акций и добавляет новый функционал для вашего удобства. В этом году появилась возможность добавлять промокод к акции.</p>
+                                          </div>
+                                        </div>
+                                    </div> 
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 card_marg_top">
+                                       <div class="card" style="">
+                                        <img class="card-img-top img-fliud" src="https://st39.stblizko.ru/images/useful_links/000/094/482_original.png" alt="Card image cap">
+                                         <div class="card-body">
+                                            <h5 class="card-title">Новый тип акции Фиксированная скидка</h5>
+                                            <p class="card-text">Теперь при добавлении акций появилась возможность зафиксировать выгоду для покупателей не только в процентах, но и в денежном размере. Это избавит ваших покупателей от необходимости высчитывать выгоду в процентах. Точная сумма экономии уже будет указана на карточке товара.</p>
+                                          </div>
+                                          
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 card_marg_top">
+                                       <div class="card" style="">
+                                        <img class="card-img-top img-fliud" src="https://st39.stblizko.ru/images/useful_links/000/094/483_original.png" alt="Card image cap">
+                                         <div class="card-body">
+                                            <h5 class="card-title">Выбор области изображения акции</h5>
+                                            <p class="card-text">Также теперь есть возможность выбирать область изображения для обложки акции. При публикации фотографии для акции, вам будет предложено самостоятельно выбрать зону, которая будет видна на обложке. Это поможет сделать карточку акции более привлекательной для покупателей.</p>
+                                          </div>
+                                          
+                                        </div>
+                                    </div> 
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 card_marg_top">
+                                       <div class="card" style="">
+                                        <img class="card-img-top img-fliud" src="https://st39.stblizko.ru/images/useful_links/000/094/484_original.png" alt="Card image cap">
+                                         <div class="card-body">
+                                            <h5 class="card-title">Отображение товаров со скидками</h5>
+                                            <p class="card-text">На странице с акциями все товары со скидками теперь выводятся в один блок. Это возможность доступна для всех компаний на BLIZKO, у которых есть хотя бы 1 товар или услуга по акции. Если товаров со скидками много, то внизу появится кнопка Смотреть все. Она приведет на страницу каталога по фильтру со скидками</p>
+                                          </div>
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--------градиент фон_конец------>            
+<!--------серый фон_карусель----->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-11 col-md-12 col-lg-12 col-xl-12 container_gutter">
+                        <h3 class="h3">     
+                            Как создать акцию на BLIZKO
+                        </h3>
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 card_marg_top">
+                                <img alt="" class="img-fluid" src="https://st17.stblizko.ru/images/useful_links/000/092/284_original.png">
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 card_marg_top">
+                                <p class="card_marg_top">
+                                    Создать акцию на BLIZKO очень просто. Перейдите на вкладку Скидки и акции на главной странице вашего сайта, либо через Конструктор сайта → Улучшить сайт → Создать/редактировать акции.
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 card_marg_top order-1 order-md-0">
+                                <p class="card_marg_top">
+                                   Нажав на оранжевый плюсик, вы попадаете на страницу создания акций. Именно здесь вы заводите желаемые параметры акции и запускаете ее на свой сайт.
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 card_marg_top">
+                                <img alt="" class="img-fluid" src="https://st17.stblizko.ru/images/useful_links/000/092/285_original.png">
+                            </div>
+                             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 card_marg_top">
+                               <p class="pad_b_up">У нас есть подробная инструкция о том, как создать акцию на BLIZKO. <br>Посмотреть <a href="https://www.blizko.ru/about/FAQ/help/showcase" target="_blank" style="text-decoration: underline;">инструкцию</a></p>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+            </div>                          
+
+<!--------серый фон_карусель------>
+            <div class="container-fluid white_border box">
+                <div class="row">
+                    <div class="col-12 gradient">
+                        <div class="row">
+                            <div class="container">
+                                <div class="row">
+                                   <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+                                        <h3 class="h3 orange menu_container">
+                                            Что дает вам сервис Акции и скидки?
+                                        </h3>
+                                        <ol class="divider_h3 menu_container">
+                                            <li class="">Возможность публиковать бесконечное число акций на своем сайте и на торговой площадке на платных тарифах.</li>
+                                            <li class="li_number">Большую аудиторию покупателей, которая ежедневно просматривает этот раздел в поиске актуальных предложений.</li>
+                                            <li class="li_number">Взаимодействие с потенциальными покупателями через e-mail рассылку.</li>
+                                            <li class="li_number">Позволяют привлечь новых покупателей и сохранить лояльность существующих. Для последних лучше работает индивидуальная система скидок.</li>
+                                        </ol>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="container">
+                                <div class="row">
+                                   <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+                                        <p>Базовое создании акций для любой компании, зарегистрированной на BLIZKO, совершенно бесплатно. С их помощью вы можете увеличить конверсию своего сайта, привлечь туда больше аудитории, посчитать сколько покупателей воспользовались вашим предложением и оценить эффективность акции.</p>
+                                        <p style="padding-bottom: 20px;">Если у вас нет готовой идеи для создания акции и вы не знаете как лучше ее оформить – наши специалисты помогут вам в этом. При размещении на платном пакете, ваш персональный менеджер разработает и оформит для вас эффективную акцию и выведет её в топ раздела Акции и скидки.</p>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+ <!--------серый фон_1------>                
+            <div class="container-fluid">
+                <div class="row">
+                   <div class="container">
+                       <div class="row">
+                          <div class="col-lg-2 col-md-2 d-none d-lg-block d-md-block">
+                                
+                            </div>
+                           <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+                            <div class="ufive-feedback"> 
+                              <section id="feedback"><p class="p_form">Хотите увеличить количество звонков и&nbsp;заказов из&nbsp;интернета?</p>
+                                <form action="https://docs.google.com/forms/d/e/1FAIpQLSc9xQll5tRtCBe-cF5ALzo733aYFNNiQz3cVu837h_zT9BiRg/formResponse" class="customer__cms-page__footer-form">
+                                <div class="field name-box"><input aria-describedby="i.desc.679156496 i.err.679156496" aria-label="Ваше имя" autocomplete="off" class="customer__cms-page__footer-form-input" data-initial-dir="auto" data-initial-value="" dir="auto" id="name" jsname="YPqjbf" name="entry.441841390" placeholder="Как Вас зовут?" required="" tabindex="0" type="text" value="" /> <label for="name">&nbsp;&nbsp;Имя</label></div>
+
+                                <div class="field email-box"><input aria-describedby="i.desc.2051682188 i.err.2051682188" aria-label="Телефон для связи" autocomplete="off" class="customer__cms-page__footer-form-input" data-initial-dir="auto" data-initial-value="" dir="auto" id="email" jsname="YPqjbf" name="entry.2119646429" placeholder="Телефон" required="" tabindex="0" type="text" value="" /> <label for="email">&nbsp;&nbsp;Телефон</label></div>
+<!--скрыто-->
+                               <div class="freebirdFormviewerViewItemsItemItem freebirdFormviewerViewItemsTextTextItem" data-item-id="679156496" jsaction="sPvj8e:e4JwSe,vwKRrd;" jscontroller="rDGJeb" jsname="ibnC6b" role="listitem" style="display: none;">
+                                      <div class="freebirdFormviewerViewItemsItemItemHeader">
+                                        <div class="freebirdFormviewerViewItemsItemItemTitleContainer">
+                                          <div aria-describedby="i.desc.1891446811" aria-level="2" class="freebirdFormviewerViewItemsItemItemTitle" dir="auto" role="heading"><span style="color:#000000;">ID компании</span></div>
+
+                                          <div class="freebirdFormviewerViewItemsItemItemHelpText" dir="auto" id="i.desc.1891446811"></div>
+                                        </div>
+                                      </div>
+
+                                      <div class="freebirdFormviewerViewItemsTextItemWrapper" style="/* display: none; */">
+                                        <div class="quantumWizTextinputPaperinputEl freebirdFormviewerViewItemsTextShortText freebirdThemedInput" jsaction="clickonly:KjsqPd; focus:Jt1EX; blur:fpfTEe; input:Lg5SV;" jscontroller="pxq3x" jsname="W85ice" jsshadow="">
+                                          <div class="quantumWizTextinputPaperinputMainContent exportContent">
+                                            <div class="quantumWizTextinputPaperinputContentArea">
+                                              <div class="quantumWizTextinputPaperinputInputArea"><span style="color:#000000;"><input aria-describedby="i.desc.1891446811 i.err.1891446811" aria-label="ID компании" autocomplete="off"
+                                                    class="quantumWizTextinputPaperinputInput exportInput" data-initial-dir="auto" data-initial-value="" dir="auto" jsname="YPqjbf" name="entry.249469055" tabindex="0" type="text" value="{company:id}" /></span></div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+<!--скрыто-->
+                                <input class="button" type="submit" value="Отправить" />
+                                <div><p class="label_p">Нажимая на кнопку, вы даете согласие на обработку <a href="https://www.blizko.ru/privacy_policy" target="_blank">персональных данных</a> в соответствии с политикой конфиденциальности и принимаете условия <a href="https://www.blizko.ru/terms" target="_blank">пользовательского соглашения</a>.</p></div>
+                                </form>
+                                </section>
+                            </div>
+                        </div>
+                            <div class="col-lg-2 col-md-2 d-none d-lg-block d-md-block">
+                                
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+<!--------серый фон_конец------>           
+
+    <script>
+        $("textarea").blur(function () { 
+      $("#feedback textarea").each(function () { 
+      $this = $(this); 
+      if (this.value != "") { 
+      $this.addClass("focused"); 
+      $("textarea + label + span").css({ opacity: 1 }); 
+      } else { 
+      $this.removeClass("focused"); 
+      $("textarea + label + span").css({ opacity: 0 }); 
+      } 
+      }); 
+    }); 
+
+    $("#feedback .field:first-child input").blur(function () { 
+      $("#feedback .field:first-child input").each(function () { 
+      $this = $(this); 
+      if (this.value != "") { 
+      $this.addClass("focused"); 
+      $(".field:first-child input + label + span").css({ opacity: 1 }); 
+      } else { 
+      $this.removeClass("focused"); 
+      $(".field:first-child input + label + span").css({ opacity: 0 }); 
+      } 
+      }); 
+    }); 
+
+    $("#feedback .field:nth-child(2) input").blur(function () { 
+      $("#feedback .field:nth-child(2) input").each(function () { 
+      $this = $(this); 
+      if (this.value != "") { 
+      $this.addClass("focused"); 
+      $(".field:nth-child(2) input + label + span").css({ opacity: 1 }); 
+      } else { 
+      $this.removeClass("focused"); 
+      $(".field:nth-child(2) input + label + span").css({ opacity: 0 }); 
+      } 
+      }); 
+    });  
+
+  </body>
+</html>

@@ -1,0 +1,1818 @@
+
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<!--<link rel="stylesheet" href="style.css">-->
+<style type="text/css">
+  html,
+  body {
+    overflow-x: hidden;
+  }
+.w_50{
+    text-align: center;
+    padding-top: 1.5rem;
+}
+    }
+  body {
+    background-color: #FEFEFE;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: #373737;
+  }
+    .li_opt_prem_second{
+        color: #373737;
+        margin-left: 1.5rem;
+        margin-bottom: 0.3rem;
+    }
+
+.new_orange_opt_prem {
+    margin: auto;
+    background-color: #FF6600 !important;
+    border-color: #FF6600 !important;
+    color: #ffffff !important;
+    width: 50%;
+    padding: 0.4rem;
+}    
+.modal-footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 0rem;
+    border-top: 1px solid #dee2e6;
+    border-bottom-right-radius: calc(.3rem - 1px);
+    border-bottom-left-radius: calc(.3rem - 1px);
+}
+  .sp_opt_prem {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #373737;
+      font-family: 'Roboto', sans-serif;
+  }
+.price_opt_prem {
+    padding-bottom: 30px;
+    padding-top: 25px;
+    color: #373737;
+}
+.card-text{
+    color: #373737;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    } 
+.ul_opt_prem{
+  list-style:none;
+  margin:0;
+  padding: 20px 0px 0px 0px;
+}
+.li_opt_prem{
+  padding:0px 5px 10px 5px;
+  font-size:12px;
+    
+}
+ 
+.li_opt_prem:before {
+    content: '';
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    vertical-align: text-top;
+    border-radius: 50%;
+    background-color: #FF6600;
+    margin-right: 10px;
+}
+.divider_opt_prem {
+    margin-top: 1rem;
+} 
+    .h4_opt_prem{
+        padding-top: 1.5rem;
+        padding-left: 2.8rem;
+    }    
+  .navbar-light .navbar-toggler {
+    color: transparent;
+    border-color: #FF6600;
+    background-color: #FF6600;
+  }
+.tab_opt_prem{
+    padding: 0.8rem 3rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #FF6600;
+
+}
+  .navbar-toggler {
+    padding: .25rem .75rem;
+  }
+
+  h1 {
+    background: none !important;
+    padding-left: 0px !important;
+    font-size: 3rem;
+      font-family: 'Roboto', sans-serif;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+      font-family: 'Roboto', sans-serif;
+  }
+
+  h2,
+  h3,
+  h4 {
+    color: #373737;
+    font-family: 'Roboto', sans-serif;
+  }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+  ul {
+    padding-inline-start: 0px !important;
+  }
+
+  .card_2_p {
+    padding-top: 0.9rem;
+    padding-bottom: 1.2rem;
+    color: #373737;
+      font-family: 'Roboto', sans-serif;
+  }
+  .card_2_p_opt_prem_2 {
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    color: #373737;
+      font-family: 'Roboto', sans-serif;
+  }
+    .card_opt_prem{
+    max-width: 50px;
+    max-height: 50px;
+    }
+  .modal-body {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1rem 1rem 0rem 1rem;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  a.active.focus,
+  a.active:focus,
+  a.focus,
+  a:active.focus,
+  a:active:focus,
+  a:focus,
+  button.active.focus,
+  button.active:focus,
+  button.focus,
+  button:active.focus,
+  button:active:focus,
+  button:focus,
+  .btn.active.focus,
+  .btn.active:focus,
+  .btn.focus,
+  .btn:active.focus,
+  .btn:active:focus,
+  .btn:focus {
+    outline: 0 !important;
+    outline-color: transparent !important;
+    outline-width: 0 !important;
+    outline-style: none !important;
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0) !important;
+  }
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #ffffff;
+    background-color: #FF6600;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+.nav-tabs {
+    border-bottom: 1px solid #FF6600;
+}
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+.nav-link:hover{
+    color: #EE3B02; 
+    }
+  .a_f:hover {
+    color: #EE3B02;
+  }
+ a{
+    color: #373737;
+    text-decoration: none;
+    background-color: transparent;
+}
+  .no-gutters {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .hid_1200 {
+    display: block;
+  }
+
+  .sh_1200 {
+    display: none;
+  }
+
+  .logo {
+    max-width: 150px;
+  }
+
+  .margin_logo {
+    margin: 2% 0% 2% 0%;
+  }
+
+  .navbar-expand-xl .navbar-nav .nav-link {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-link:hover {
+    opacity: 0.6;
+  }
+
+  .blue_b {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    background-color: #388AE3;
+    border-radius: 0.3em;
+    color: #ffffff !important;
+  }
+
+  .orange_b {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    background-color: #FF6600;
+    border-radius: 0.3em;
+    color: #ffffff !important;
+  }
+
+  .orange {
+    color: #FF6600 !important;
+  }
+
+  .bckg-img1 {
+    width: 100%;
+  }
+
+  /*
+.img-wrap {
+  position: relative;
+}
+*/
+  .txt-wrapp {
+    position: absolute;
+    bottom: 27%;
+    left: 3%;
+    width: 100%;
+  }
+
+  .otstyp {
+    margin-top: 2.5rem;
+    margin-bottom: 0rem;
+  }
+
+  .divider {
+    margin-top: 3rem;
+  }
+
+  .divider_2 {
+    margin-top: 5.5rem;
+  }
+
+  .gray {
+    background-color: #F3F3F3;
+  }
+
+.card {
+   max-width: 19rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    }
+    
+  .card_shadow {
+    box-shadow: 7px 5px 30px rgba(82, 77, 74, 0.25);
+  }
+
+  .flex-grow-0 {
+    -ms-flex-positive: 0 !important;
+    flex-grow: 0 !important;
+    width: 80%;
+    margin: auto;
+  }
+
+  .flex-grow-1 {
+    -ms-flex-positive: 1 !important;
+    flex-grow: 1 !important;
+    width: 80%;
+    margin: auto;
+    margin-top: 1.5rem;
+  }
+
+  .btn {
+    margin-top: 1.5rem !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .btn_form {
+    margin-bottom: 0.5rem !important;
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  }
+
+  .btn_orange {
+    color: #fff;
+    background-color: #FF6600;
+    border-color: #FF6600;
+    padding: 0.5rem;
+  }
+
+  .btn_orange:hover {
+    color: #fff;
+    background-color: #E33700;
+    border-color: #E33700;
+  }
+
+  .btn_width100 {
+    width: 100%;
+  }
+
+  .black_color_modal {
+    color: #373737;
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+    font-weight: 500;
+  }
+
+  .new_orange {
+    margin: auto;
+    background-color: #FF6600 !important;
+    border-color: #FF6600 !important;
+    color: #ffffff !important;
+    width: 50%;
+    padding: 0.7rem;
+  }
+
+  .new_red {
+    font-size: 1.1rem;
+    margin: auto;
+    background-color: #E34831 !important;
+    border-color: #E34831 !important;
+    color: #ffffff !important;
+    width: 70%;
+    padding: 0.7rem;
+  }
+
+  .new_red:hover {
+    background-color: #E33700 !important;
+    border-color: #E33700 !important;
+    color: #ffffff !important;
+  }
+
+  .new_orange:hover {
+    background-color: #E33700 !important;
+    border-color: #E33700 !important;
+    color: #ffffff !important;
+  }
+    .new_orange_opt_prem:hover {
+    background-color: #E33700 !important;
+    border-color: #E33700 !important;
+    color: #ffffff !important;
+  }
+
+  .form-control {
+    height: calc(1.7em + .75rem + 2px);
+  }
+
+  .card-title_bl {
+    font-size: 26px;
+    line-height: 32px;
+    color: #1758FF;
+    padding-top: 0.7rem;
+    font-family: 'Roboto', sans-serif;
+      
+  }
+
+  .card-title_or {
+    font-size: 26px;
+    line-height: 32px;
+    color: #FF6600;
+    padding-top: 0.7rem;
+  }
+
+  .card_2 {
+    max-width: 37rem;
+    margin-right: 0.9rem;
+    margin-left: 0.9rem;
+    padding: 0.9rem;
+    border-radius: 3px;
+  }
+
+  .card_2_p {
+    padding-top: 0.9rem;
+    padding-bottom: 1.2rem;
+    font-family: 'Roboto', sans-serif;  
+  }
+    .card_2_p_opt_prem {
+    padding-top: 0.9rem;
+    padding-bottom: 0.2rem;
+    margin-block-end: 0.5em !important;
+    color: #373737;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'Roboto', sans-serif;  
+  }
+
+.flex-grow-1_opt_prem {
+    -ms-flex-positive: 1 !important;
+    flex-grow: 1 !important;
+    width: 80%;
+    margin: auto;
+    margin-top: 0rem;
+}
+
+  .white {
+    color: #ffffff;
+  }
+
+  .black {
+    background-color: #262626;
+  }
+
+  .btn_3 {
+    margin-bottom: 1rem !important;
+    display: inline-block;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #1758FF;
+    border: 1px solid #1758FF;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  }
+
+  .btn_4 {
+    margin-bottom: 1rem !important;
+    display: inline-block;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #FF6600;
+    border: 1px solid #FF6600;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  }
+
+  .btn_3:hover {
+    color: #ffffff;
+    background-color: #0052CC;
+    border: 1px solid #0052CC;
+  }
+
+  .cards_keis-text {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 500;
+    color: #292929;
+  }
+
+  .footer {
+    background-color: #444444;
+  }
+
+  .icons_footer {
+    display: inline-block;
+    margin: auto 8px auto 0px;
+    padding-bottom: 10px;
+  }
+.cont_2{
+  padding-left: 0px;
+
+}
+  .cont_icon {
+    max-width: 30px;
+  }
+
+  .cont_icon_2 {
+    max-width: 30px;
+    margin-right: 2%;
+  }
+
+  .hide_624 {
+    display: block;
+  }
+
+  .hide_b {
+    display: block;
+  }
+
+  .show_b {
+    display: none;
+  }
+
+  .show_c {
+    display: none;
+  }
+
+  @media all and (max-width: 1390.9px) {
+    .txt-wrapp {
+      bottom: 25%;
+    }
+  }
+
+  @media all and (max-width: 1230.9px) {
+    .txt-wrapp {
+      bottom: 20%;
+    }
+  }
+
+  @media all and (max-width: 1199px) {
+    .hid_1200 {
+      display: none;
+    }
+
+    .sh_1200 {
+      display: block;
+    }
+
+    .navbar-brand {
+      margin-left: 0.5rem;
+    }
+  }
+
+  @media all and (max-width: 1120.9px) {
+    h2 {
+      font-size: 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    .txt-wrapp {
+      bottom: 24%;
+    }
+  }
+
+  @media all and (max-width: 1109.9px) {
+    .hide_992 {
+      display: none;
+    }
+  }
+
+  @media all and (max-width: 968.9px) {
+    h2 {
+      font-size: 1.9rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  @media all and (max-width: 986.9px) {
+    .divider_2 {
+      margin-top: 3.5rem;
+    }
+  }
+
+  @media all and (max-width: 786.9px) {
+    .hide_b {
+      display: none;
+    }
+
+    .show_b {
+      display: block;
+    }
+
+    .txt-wrapp {
+      bottom: 27%;
+    }
+  }
+
+  @media all and (max-width: 665.9px) {
+    .new_red {
+      width: 90%;
+    }
+  }
+
+  @media all and (max-width: 628.9px) {
+    .hide_624 {
+      display: none;
+    }
+
+    .txt-wrapp {
+      bottom: 24%;
+    }
+
+    h2 {
+      font-size: 1.4rem !important;
+    }
+
+    h4 {
+      font-size: 1rem !important;
+    }
+
+    h1 {
+      font-size: 1.7rem;
+    }
+  }
+
+  @media all and (max-width: 490.9px) {
+    .hide_b {
+      display: none;
+    }
+
+    .show_b {
+      display: none;
+    }
+
+    .show_c {
+      display: block;
+    }
+
+    .txt-wrapp {
+      bottom: 25%;
+    }
+  }
+
+  @media all and (max-width: 428.9px) {
+    h2 {
+      font-size: 1.2rem !important;
+    }
+
+    h4 {
+      font-size: 1rem !important;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      font-size: 1.45rem;
+    }
+
+    .new_red {
+      font-size: 0.9rem;
+      width: 100%;
+    }
+  }
+
+  @media all and (max-width: 370.9px) {
+    .txt-wrapp {
+      bottom: 18%;
+    }
+  }
+</style>
+<title></title>
+<div class="container-fluid" style="max-width: 1600px;">
+  <div class="row justify-content-center">
+    <!------------------меню-бургер---------------->
+    <div class="container-fluid no-gutters hid_1200">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <nav class="navbar navbar-expand-xl navbar-light"><a class="navbar-brand" href="https://www.blizko.ru/" target="_blank"><img alt="BLIZKO" class="img-fluid logo margin_logo"
+                src="https://st28.stblizko.ru/images/useful_links/000/093/014_original.png" /> </a><button aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler collapsed"
+              data-target="#navbarColor01" data-toggle="collapse" type="button"><span class="navbar-toggler-icon">&equiv;</span></button>
+            <div class="navbar-collapse collapse d-flex justify-content-end" id="navbarColor01" style="">
+              <form class="form-inline">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item"><a class="nav-link blue_b" href="https://www.blizko.ru/company_wizard/new" target="_blank">Добавить компанию</a></li>
+                  <li class="nav-item"><a class="nav-link orange_b" href="https://www.blizko.ru/about/reklama/order_call" target="_blank">Заказать звонок</a></li>
+                  <li class="nav-item"><a class="nav-link orange" href="tel:88007000-191" target="_blank"><img alt="телефон" src="https://st28.stblizko.ru/images/useful_links/000/093/015_original.png" style="max-width: 2.2rem;" />8(800)7000-191</a>
+                  </li>
+                </ul>
+              </form>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid no-gutters sh_1200">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <nav class="navbar navbar-expand-xl navbar-light"><a class="navbar-brand" href="https://www.blizko.ru/" target="_blank"><img alt="BLIZKO" class="img-fluid logo margin_logo"
+                src="https://st28.stblizko.ru/images/useful_links/000/093/014_original.png" /> </a><button aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler collapsed"
+              data-target="#navbarColor02" data-toggle="collapse" type="button"><span class="navbar-toggler-icon">&equiv;</span></button>
+
+            <div class="navbar-collapse collapse" id="navbarColor02" style="">
+              <form class="form-inline">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item"><a class="nav-link blue_b" href="https://www.blizko.ru/company_wizard/new" target="_blank">Добавить компанию</a></li>
+                  <li class="nav-item"><a class="nav-link orange_b" href="https://www.blizko.ru/about/reklama/order_call" target="_blank">Заказать звонок</a></li>
+                  <li class="nav-item"><a class="nav-link orange" href="tel:88007000-191" target="_blank"><img src="https://st28.stblizko.ru/images/useful_links/000/093/015_original.png" style="max-width: 2.2rem;" />8(800)7000-191</a></li>
+                </ul>
+              </form>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!------------------фон с надписью---------------->
+
+    <div class="container-fluid hide_b">
+      <div class="row">
+        <div class="col-12 img-wrap no-gutters"><img class="img-fluid bckg-img1" src="https://st28.stblizko.ru/images/useful_links/000/093/016_original.png" />
+          <div class="txt-wrapp">
+            <h1 style="color: #ffffff !important; font-weight: 500;">Все инструменты</h1>
+
+            <h2 style="color: #ffffff !important;">для продаж и продвижения<br />
+              в интернете<br />
+              на одной площадке</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid show_b">
+      <div class="row">
+        <div class="col-12 img-wrap no-gutters"><img class="img-fluid bckg-img1" src="https://st34.stblizko.ru/images/useful_links/000/093/837_original.png" />
+          <div class="txt-wrapp">
+            <h1 style="color: #ffffff !important; font-weight: 500;">Все инструменты</h1>
+
+            <h2 style="color: #ffffff !important;">для продаж и продвижения<br />
+              в интернете<br />
+              на одной площадке</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid show_c">
+      <div class="row">
+        <div class="col-12 img-wrap no-gutters"><img class="img-fluid bckg-img1" src="https://st34.stblizko.ru/images/useful_links/000/093/839_original.png" />
+          <div class="txt-wrapp">
+            <h1 style="color: #ffffff !important;"><b>Все инструменты</b></h1>
+
+            <h2 style="color: #ffffff !important;">для продаж и продвижения<br />
+              в интернете<br />
+              на одной площадке</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------------блок карточки---------------->
+
+    <div class="container-fluid otstyp">
+      <div class="row">
+        <div class="col-12">
+          <div class="row justify-content-center">
+            <div class="col-xl-10 col-lg-10 col-md-10  col-sm-12 col-10">
+              <div class="row justify-content-center">
+                <div class="col-12">
+                  <div class="row justify-content-center">
+                    <div class="col-auto hide_992"><img alt="" class="img-fluid" src="https://st28.stblizko.ru/images/useful_links/000/093/018_original.png" style="max-width:124px;" /></div>
+
+                    <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                      <h2>BLIZKO федеральная торговая площадка</h2>
+                      <h4>Здесь каждый месяц более 5 млн. покупателей выбирают товары и услуги. Получайте звонки и заявки от новых покупателей.</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!----------------------------------container-gray конец---------------------------------->
+
+          <div class="row justify-content-center white divider">
+            <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-10">
+              <div class="row justify-content-center">
+                <div class="col-12">
+                  <div class="row justify-content-center">
+                    <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                      <h4>Любой платный тариф размещения на BLIZKO обеспечит вам:</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center divider">
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-10 col-12 d-flex justify-content-center" style="margin-bottom: 1.5em;">
+                  <div class="" style="max-width: 18rem;  display: block;">
+                    <div class="w_50"><img alt="" class="img-fluid card-img-top" src="https://st41.stblizko.ru/images/useful_links/000/094/671_original.png" style="max-width: 54px;" /></div>
+
+                    <div class="card-body">
+                      <p class="card-text text-center">Звонки и заявки от целевых покупателей</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-10 col-12 d-flex justify-content-center" style="margin-bottom: 1.5em;">
+                  <div class="" style="max-width: 18rem;  display: block;">
+                    <div class="w_50"><img alt="" class="img-fluid card-img-top" src="https://st41.stblizko.ru/images/useful_links/000/094/672_original.png" style="max-width: 54px;" /></div>
+
+                    <div class="card-body">
+                      <p class="card-text text-center">Обслуживание магазина персональным контент-менеджером</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-10 col-12 d-flex justify-content-center" style="margin-bottom: 1.5em;">
+                  <div class="" style="max-width: 18rem;  display: block;">
+                    <div class="w_50"><img alt="" class="img-fluid card-img-top" src="https://st41.stblizko.ru/images/useful_links/000/094/673_original.png" style="max-width: 54px;" /></div>
+
+                    <div class="card-body">
+                      <p class="card-text text-center">Полнофункциональный интернет-магазин</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                 
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="row justify-content-center">
+                            <div class="col-10">
+                                <div class="row justify-content-center">
+                                    <div class="col-12" style="padding-top: 0.5rem; padding-bottom: 0rem;">
+                                        <hr>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                  
+               <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <div class="row justify-content-start">
+                    <div class="col-xl-6 col-lg-6 col-md-10 col-sm-10 col-12 h4_opt_prem">
+                      <ul class="ul_opt_prem" style="padding-bottom: 1.5rem;">
+                          <li class="li_opt_prem"><span class="sp_opt_prem">Мобильная версия сайта</span></li>
+                          <li class="li_opt_prem"><span class="sp_opt_prem">Загрузка каталога товаров в 1 клик из Excel, YML, 1С</span></li>
+                          <li class="li_opt_prem"><span class="sp_opt_prem">Готовые шаблоны дизайна магазина</span></li>
+                          <li class="li_opt_prem"><span class="sp_opt_prem">Простой и понятный интерфейс<br>для редактирования товаров</span></li>
+                          <li class="li_opt_prem"><span class="sp_opt_prem">Настроенная электронная корзина</span></li>
+                      </ul>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-10 col-sm-10 col-12 h4_opt_prem">
+                      <ul class="ul_opt_prem" style="padding-bottom: 1.5rem;">
+                          <li class="li_opt_prem"><span class="sp_opt_prem">Личный кабинет для управления заказами</span></li>
+                          <li class="li_opt_prem"><span class="sp_opt_prem">Sms-информирование о заказах</span></li>
+                          <li class="li_opt_prem"><span class="sp_opt_prem">Настроенная система статистики BLIZKO</span></li>
+                          <li class="li_opt_prem"><span class="sp_opt_prem">Подключение Яндекс.Метрики<br>и Google Analytics</span></li>
+                          <li class="li_opt_prem"><span class="sp_opt_prem">Домен второго уровня</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12 divider">
+              <div class="row justify-content-center">
+                <div class="col-12 divider">
+                  
+                 <div class="row justify-content-center">
+                    <div class="col-auto hide_992"><img alt="" class="img-fluid" src="https://st28.stblizko.ru/images/useful_links/000/093/018_original.png" style="max-width:124px;" /></div>
+
+                    <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                      <h2 style="margin-top: 1rem;">Выберите свой тариф на BLIZKO в&nbsp;{(name_prepositional)}</h2>
+                    </div>
+                  </div>
+                 
+                 <div class="row justify-content-center divider">
+                    <div class="col-12" style="padding-top: 1.3rem; padding-bottom: 0.9rem;">
+                     <div class="container-fluid" id="descr">
+                      <div class="row justify-content-center">
+                        <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                          <ul class="nav nav-tabs mb-3" id="tab-tab" role="tablist">
+                            <li class="nav-item"><a aria-controls="tab-home" aria-selected="true" class="nav-link active tab_opt_prem" data-toggle="pill" href="#tab-home" id="tab-home-tab" role="tab">Стандарт</a></li>
+                            <li class="nav-item"><a aria-controls="tab-profile" aria-selected="false" class="nav-link tab_opt_prem" data-toggle="pill" href="#tab-profile" id="tab-profile-tab" role="tab">Оптимум</a></li>
+                            <li class="nav-item"><a aria-controls="tab-contact" aria-selected="false" class="nav-link tab_opt_prem" data-toggle="pill" href="#tab-contact" id="tab-contact-tab" role="tab">Премиум</a></li>
+                          </ul>
+
+                          <div class="tab-content divider" id="tab-tabContent">
+                            <div aria-labelledby="tab-home-tab" class="tab-pane fade show active" id="tab-home" role="tabpanel">
+                              <div class="row justify-content-start">
+                                  <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12 h4_opt_prem" style="">
+                                    <h4>Тарифы Стандарт</h4>
+                                    <h5 style="color: #373737;">Размещение товаров и услуг в каталогах BLIZKO.</h5>
+                                  </div>
+                                </div>
+                               <div class="row justify-content-center">
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <div class="row justify-content-center">
+                                        <div class="card card_shadow col-xl-4 col-lg-4 col-md-10 col-sm-10 col-12 d-flex flex-column justify-content-between no-gutters divider"><img alt="Серебро" class="card-img-top"
+                                            src="https://st28.stblizko.ru/images/useful_links/000/093/023_original.png" />
+                                          <div class="flex-grow-1">
+                                            <p class="card-text">Место в каталогах BLIZKO выше бесплатных компаний</p>
+                                            <p class="card-text">Загрузка до {(goods_limit)} товаров</p>
+                                            <p class="card-text">Подготовим полные описания для {(descriptions_limit)} товаров</p>
+                                          </div>
+                                          <h5 class="text-center price_modal price_opt_prem"><b>{(price_year)} </b><span style="font-size: 1.2rem;">руб./год</span></h5>
+                                          <div class="modal-footer"><a class="btn new_orange_opt_prem" href="https://ru.blizko.ru/about/reklama/zayavka_price/serebro" target="_blank">Подключить</a></div>
+                                        </div>
+                                         
+
+                                         <div class="card card_shadow col-xl-4 col-lg-4 col-md-10 col-sm-10 col-12 d-flex flex-column justify-content-between no-gutters divider"><img alt="Золото" class="card-img-top"
+                                            src="https://st28.stblizko.ru/images/useful_links/000/093/021_original.png" />
+                                          <div class="flex-grow-1">
+                                            <p class="card-text">Место в каталогах BLIZKO выше Серебряных компаний</p>
+                                            <p class="card-text">Загрузка до {(goods_limit)} товаров</p>
+                                            <p class="card-text">Подготовим полные описания для {(descriptions_limit)} товаров</p>
+                                          </div>
+                                          <h5 class="text-center price_modal price_opt_prem"><b>{(price_year)}</b> <span style="font-size: 1.2rem;">руб./год</span></h5>
+                                          <div class="modal-footer"><a class="btn new_orange_opt_prem" href="https://ru.blizko.ru/about/reklama/zayavka_price/zoloto" target="_blank">Подключить</a></div>
+                                        </div>
+
+                                       <div class="card card_shadow col-xl-4 col-lg-4 col-md-10 col-sm-10 col-12 d-flex flex-column justify-content-between no-gutters divider"><img alt="Платина" class="card-img-top"
+                                            src="https://st28.stblizko.ru/images/useful_links/000/093/019_original.png" />
+                                          <div class="flex-grow-1">
+                                            <p class="card-text">Место в каталогах BLIZKO выше Золотых компаний</p>
+                                            <p class="card-text">Загрузка до {(goods_limit)} товаров</p>
+                                            <p class="card-text">Подготовим полные описания для {(descriptions_limit)} товаров</p>
+                                          </div>
+                                          <h5 class="text-center price_modal price_opt_prem"><b>{(price_year)}</b> <span style="font-size: 1.2rem;">руб./год</span></h5>
+                                          <div class="modal-footer"><a class="btn new_orange_opt_prem" href="https://ru.blizko.ru/about/reklama/zayavka_price/platina" target="_blank">Подключить</a></div>
+                                        </div>
+                                      </div>
+                                  </div>
+                                </div>
+                               </div>
+                               
+                               <div aria-labelledby="tab-profile-tab" class="tab-pane fade" id="tab-profile" role="tabpanel">
+                                 <div class="row justify-content-start">
+                                  <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12 h4_opt_prem" style="">
+                                    <h4>Тарифы Оптимум</h4>
+                                    <h5 style="color: #373737;">Размещение товаров и услуг в каталогах BLIZKO. Оптимизация сайта.</h5>
+                                  </div>
+                                </div>
+                                  <div class="row justify-content-center">
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                       <div class="row justify-content-center">
+                                            <div class="card card_shadow col-xl-4 col-lg-4 col-md-10 col-sm-10 col-10 d-flex flex-column justify-content-between no-gutters divider"><img alt="Серебро" class="card-img-top"
+                                                src="https://st28.stblizko.ru/images/useful_links/000/093/023_original.png" />
+                                              <div class="flex-grow-1">
+                                                <p class="card-text">Место в каталогах BLIZKO выше бесплатных компаний</p>
+                                                <p class="card-text">Загрузка до {(goods_limit)} товаров</p>
+                                                <p class="card-text">Подключение Мегасайт Оптимум</p>
+                                              </div>
+                                              <h5 class="text-center price_modal price_opt_prem"><b>{(optimum_year)}<br></b><span style="font-size: 1.2rem;">руб./год</span></h5>
+                                              <div class="modal-footer"><a class="btn new_orange_opt_prem" href="https://ru.blizko.ru/about/reklama/zayavka_price/serebro" target="_blank">Подключить</a></div>
+                                            </div>
+
+                                            <div class="card card_shadow col-xl-4 col-lg-4 col-md-10 col-sm-10 col-10 d-flex flex-column justify-content-between no-gutters divider"><img alt="Серебро" class="card-img-top"
+                                                src="https://st28.stblizko.ru/images/useful_links/000/093/021_original.png" />
+                                              <div class="flex-grow-1">
+                                                <p class="card-text">Место в каталогах BLIZKO выше Серебряных компаний</p>
+                                                <p class="card-text">Загрузка до {(goods_limit)} товаров</p>
+                                                <p class="card-text">Подключение Мегасайт Оптимум</p>
+                                              </div>
+                                              <h5 class="text-center price_modal price_opt_prem"><b>{(optimum_year)}<br></b><span style="font-size: 1.2rem;">руб./год</span></h5>
+                                              <div class="modal-footer"><a class="btn new_orange_opt_prem" href="https://ru.blizko.ru/about/reklama/zayavka_price/zoloto" target="_blank">Подключить</a></div>
+                                            </div>
+
+                                            <div class="card card_shadow col-xl-4 col-lg-4 col-md-10 col-sm-10 col-10 d-flex flex-column justify-content-between no-gutters divider"><img alt="Серебро" class="card-img-top"
+                                                src="https://st28.stblizko.ru/images/useful_links/000/093/019_original.png" />
+                                              <div class="flex-grow-1">
+                                                <p class="card-text">Место в каталогах BLIZKO выше Золотых компаний</p>
+                                                <p class="card-text">Загрузка до {(goods_limit)} товаров</p>
+                                                <p class="card-text">Подключение Мегасайт Оптимум</p>
+                                              </div>
+                                              <h5 class="text-center price_modal price_opt_prem"><b>{(optimum_year)}<br></b><span style="font-size: 1.2rem;">руб./год</span></h5>
+                                              <div class="modal-footer"><a class="btn new_orange_opt_prem" href="https://ru.blizko.ru/about/reklama/zayavka_price/platina" target="_blank">Подключить</a></div>
+                                            </div>
+                                          </div>
+                                       </div>
+                                   </div>
+                                   <div class="row justify-content-start">
+                                      <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12 h4_opt_prem divider">
+                                        <p style="color: #373737; font-size: 18px;">Мегасайт Оптимум - повышение эффективности вашего магазина на BLIZKO:</p>
+                                        <ul>
+                                            <li class="li_opt_prem_second">Индивидуальный дизайн сайта</li>
+                                            <li class="li_opt_prem_second">Подключение онлайн-сервисов</li>
+                                            <li class="li_opt_prem_second">SEO-оптимизация каталога и товаров</li>
+                                            <li class="li_opt_prem_second" style="list-style-type: none; font-size: 18px; color: #FF6600; cursor: pointer; text-decoration: underline; margin-top: 1.3rem;"><a href="https://www.blizko.ru/about/megasite" target="_blank" style="color: #FF6600;">Узнать подробнее об услуге Мегасайт Оптимум</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                </div>
+                               
+                               <div aria-labelledby="tab-contact-tab" class="tab-pane fade" id="tab-contact" role="tabpanel">
+                                  <div class="row justify-content-start">
+                                      <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12 h4_opt_prem" style="">
+                                         <h4>Тарифы Премиум</h4>
+                                         <h5 style="color: #373737;">Размещение товаров и услуг в каталогах BLIZKO. Оптимизация сайта.</h5>
+                                      </div>
+                                  </div>
+                                  <div class="row justify-content-center">
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <div class="row justify-content-center">
+                                           <div class="card card_shadow col-xl-4 col-lg-4l-md-10 col-sm-10 col-10 d-flex flex-column justify-content-between no-gutters divider"><img alt="Серебро" class="card-img-top"
+                                                src="https://st28.stblizko.ru/images/useful_links/000/093/023_original.png" />
+                                              <div class="flex-grow-1">
+                                                <p class="card-text">Место в каталогах BLIZKO выше бесплатных компаний</p>
+                                                <p class="card-text">Загрузка до {(goods_limit)} товаров</p>
+                                                <p class="card-text">Подключение Мегасайт Премиум</p>
+                                              </div>
+                                              <h5 class="text-center price_modal price_opt_prem"><b>{(premium_year)}<br></b><span style="font-size: 1.2rem;">руб./год</span></h5>
+                                              <div class="modal-footer"><a class="btn new_orange_opt_prem" href="https://ru.blizko.ru/about/reklama/zayavka_price/serebro" target="_blank">Подключить</a></div>
+                                            </div>                   
+                                           <div class="card card_shadow col-xl-4 col-lg-4 col-md-10 col-sm-10 col-10 d-flex flex-column justify-content-between no-gutters divider"><img alt="Серебро" class="card-img-top"
+                                                src="https://st28.stblizko.ru/images/useful_links/000/093/021_original.png" />
+                                              <div class="flex-grow-1">
+                                                <p class="card-text">Место в каталогах BLIZKO выше Серебряных компаний</p>
+                                                <p class="card-text">Загрузка до {(goods_limit)} товаров</p>
+                                                <p class="card-text">Подключение Мегасайт Премиум</p>
+                                              </div>
+                                              <h5 class="text-center price_modal price_opt_prem"><b>{(premium_year)}<br></b><span style="font-size: 1.2rem;">руб./год</span></h5>
+                                              <div class="modal-footer"><a class="btn new_orange_opt_prem" href="https://ru.blizko.ru/about/reklama/zayavka_price/zoloto" target="_blank">Подключить</a></div>
+                                            </div>
+
+                                            <div class="card card_shadow col-xl-4 col-lg-4 col-md-10 col-sm-10 col-10 d-flex flex-column justify-content-between no-gutters divider"><img alt="Серебро" class="card-img-top"
+                                                src="https://st28.stblizko.ru/images/useful_links/000/093/019_original.png" />
+                                              <div class="flex-grow-1">
+                                                <p class="card-text">Место в каталогах BLIZKO выше Золотых компаний</p>
+                                                <p class="card-text">Загрузка до {(goods_limit)} товаров</p>
+                                                <p class="card-text">Подключение Мегасайт Премиум</p>
+                                              </div>
+                                              <h5 class="text-center price_modal price_opt_prem"><b>{(premium_year)}<br></b><span style="font-size: 1.2rem;">руб./год</span></h5>
+                                              <div class="modal-footer"><a class="btn new_orange_opt_prem" href="https://ru.blizko.ru/about/reklama/zayavka_price/platina" target="_blank">Подключить</a></div>
+                                            </div>
+                                          </div>
+                                       </div>
+                                   </div>
+                                   <div class="row justify-content-start">
+                                      <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12 h4_opt_prem divider">
+                                        <p style="color: #373737; font-size: 18px;">Мегасайт Премиум - повышение эффективности вашего магазина на BLIZKO:</p>
+                                        <ul>
+                                            <li class="li_opt_prem_second">Индивидуальный дизайн сайта</li>
+                                            <li class="li_opt_prem_second">Подключение онлайн-сервисов</li>
+                                            <li class="li_opt_prem_second">SEO-оптимизация каталога и товаров</li>
+                                            <li class="li_opt_prem_second">Дополнительные продающие посадочные страницы</li>
+                                            <li class="li_opt_prem_second" style="list-style-type: none; font-size: 18px; color: #FF6600; cursor: pointer; text-decoration: underline; margin-top: 1.3rem;"><a href="https://www.blizko.ru/about/megasite" target="_blank" style="color: #FF6600;">Узнать подробнее об услуге Мегасайт Премиум</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>                 
+                  <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 divider"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center gray divider">
+            <div class="col-12 divider">
+              <div class="row justify-content-center">
+                <div class="col-xl-11 col-lg-11 col-md-11 col-sm-10 col-10">
+                  <div class="row justify-content-center">
+                    <div class="col-12">
+
+                      <!------------------------форма1------------------------>
+
+                      <div class="row justify-content-center">
+                        <div class="col-12 margin_white_arrow">
+                          <div class="row justify-content-center">
+                            <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12">
+                              <h3>Не знаете, какой тариф выбрать?</h3>
+                              <h4>Оставьте заявку, наш менеджер поможет подобрать тариф для эффективного размещения на BLIZKO</h4>
+                            </div>
+                          </div>
+
+                          <div class="row justify-content-center">
+                            <div class="col-12">
+                              <div class="row justify-content-center">
+                                <div class="col-3 hide_992 divider"><img alt="" class="img-fluid form_1920" src="https://st28.stblizko.ru/images/useful_links/000/093/028_original.png" style="" /></div>
+
+                                <div class="col-xl-7 col-lg-7 col-md-7 col-sm-10 col-12 divider">
+                                  <form action="https://docs.google.com/forms/d/e/1FAIpQLSfIfAuWtJC9KaQ6U1kO6P7GBEsVpwU2opWkoPhRKoOglw5ibg/formResponse">
+                                    <div class="form-group"><input aria-describedby="i.desc.1965159398 i.err.1965159398" aria-label="Ваше имя" autocomplete="off" class="form-control" data-initial-dir="auto" data-initial-value="" dir="auto" id="name"
+                                        jsname="YPqjbf" name="entry.1811410461" placeholder="Ваше имя" required="" tabindex="0" type="name" value="" /></div>
+
+                                    <div class="form-group"><input aria-describedby="i.desc.759083124 i.err.759083124" aria-label="Телефон для связи" autocomplete="off" class="form-control" data-initial-dir="auto" data-initial-value="" dir="auto"
+                                        for="Mytel" id="Mytel" jsname="YPqjbf" name="entry.276794704" placeholder="Телефон" required="" tabindex="0" type="Mytel" value="" /></div>
+
+                                    <div class="freebirdFormviewerViewItemsItemItem freebirdFormviewerViewItemsTextTextItem" data-item-id="170766147" jsaction="sPvj8e:e4JwSe,vwKRrd;" jscontroller="rDGJeb" jsname="ibnC6b" role="listitem"
+                                      style="display: none;">
+                                      <div class="freebirdFormviewerViewItemsItemItemHeader">
+                                        <div class="freebirdFormviewerViewItemsItemItemTitleContainer">
+                                          <div aria-describedby="i.desc.170766147" aria-level="2" class="freebirdFormviewerViewItemsItemItemTitle" dir="auto" role="heading">ID компании</div>
+
+                                          <div class="freebirdFormviewerViewItemsItemItemHelpText" dir="auto" id="i.desc.170766147"></div>
+                                        </div>
+                                      </div>
+
+                                      <div class="freebirdFormviewerViewItemsTextItemWrapper" style="/* display: none; */">
+                                        <div class="quantumWizTextinputPaperinputEl freebirdFormviewerViewItemsTextShortText freebirdThemedInput" jsaction="clickonly:KjsqPd; focus:Jt1EX; blur:fpfTEe; input:Lg5SV;" jscontroller="pxq3x" jsname="W85ice"
+                                          jsshadow="">
+                                          <div class="quantumWizTextinputPaperinputMainContent exportContent">
+                                            <div class="quantumWizTextinputPaperinputContentArea">
+                                              <div class="quantumWizTextinputPaperinputInputArea"><input aria-describedby="i.desc.170766147 i.err.170766147" aria-label="ID компании" autocomplete="off"
+                                                  class="quantumWizTextinputPaperinputInput exportInput" data-initial-dir="auto" data-initial-value="" dir="auto" jsname="YPqjbf" name="entry.1652179291" tabindex="0" type="text" value="14424517" />
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <button class="btn_form btn_orange btn_width100" type="submit">Подобрать тариф</button><small class="form-text text-muted">Нажимая на кнопку, вы даете согласие на обработку персональных данных в соответствии с <a
+                                        class="orange" href="https://www.blizko.ru/privacy_policy" target="_blank">политикой конфиденциальности</a> и принимаете условия <a class="orange" href="https://www.blizko.ru/terms"
+                                        target="_blank">пользовательского соглашения</a></small>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="divider"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center white divider">
+            <div class="col-xl-10 col-lg-10 col-md-10  col-sm-12 col-10">
+              <div class="row justify-content-center">
+                <div class="col-12">
+                  <div class="row justify-content-center">
+                    <div class="col-auto hide_992"><img alt="" class="img-fluid" src="https://st28.stblizko.ru/images/useful_links/000/093/018_original.png" style="max-width:124px;" /></div>
+
+                    <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                      <h2 style="margin-top: 1.5rem;">Дополнительные инструменты продвижения на&nbsp;BLIZKO</h2>
+                    </div>
+
+                    <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12 divider">
+                      <h4>Инструменты для улучшения вашего сайта</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
+              <div class="row justify-content-center">
+                <div class="col-12">
+                  <div class="row justify-content-center">
+                    <div class="card_2 card_shadow col-xl-5 col-lg-5 col-md-10 col-sm-10 col-12 d-flex flex-column justify-content-between no-gutters divider card_padd">
+                      <div class="flex-grow-1">
+                        <div class="col-12">
+                          <div class="row align-items-center">
+                            <div class="col-xl-2 col-lg-2 col-md-2 d-none d-sm-none d-md-none d-lg-block d-xl-block no-gutters"><img alt="Мегасайт" class="img-fluid" src="https://st28.stblizko.ru/images/useful_links/000/093/103_original.png" /></div>
+
+                            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                              <p class="card-title_bl"><strong>Мегасайт</strong></p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <p class="card_2_p">Настроим полноценный интернет-магазин, подключим доставку, онлайн-кассу и онлайн-оплату, интегрируем с&nbsp;системами учета.</p>
+                      </div>
+                      <a class="flex-grow-0 btn_3 btn_orange" href="https://www.blizko.ru/about/megasite" target="_blank">Подробнее</a>
+                    </div>
+
+                    <div class="card_2 card_shadow col-xl-5 col-lg-5 col-md-10 col-sm-10 col-12 d-flex flex-column justify-content-between no-gutters divider card_padd">
+                      <div class="flex-grow-1">
+                        <div class="col-12">
+                          <div class="row align-items-center">
+                            <div class="col-xl-2 col-lg-2 col-md-2 d-none d-sm-none d-md-none d-lg-block d-xl-block no-gutters"><img alt="Мегасайт" class="img-fluid" src="https://st28.stblizko.ru/images/useful_links/000/093/104_original.png" /></div>
+
+                            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                              <p class="card-title_bl"><strong>SEO-оптимизация</strong></p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <p class="card_2_p">Настроим и улучшим ваш сайт на основании рекомендаций поисковых систем. Исправим технические ошибки в работе сайта.</p>
+                      </div>
+                      <a class="flex-grow-0 btn_3 btn_orange" href="https://www.blizko.ru/about/seo_promotion" target="_blank">Подробнее</a>
+                    </div>
+
+                    <div class="card_2 card_shadow col-xl-5 col-lg-5 col-md-10 col-sm-10 col-12 d-flex flex-column justify-content-between no-gutters divider card_padd">
+                      <div class="flex-grow-1">
+                        <div class="col-12">
+                          <div class="row align-items-center">
+                            <div class="col-xl-2 col-lg-2 col-md-2 d-none d-sm-none d-md-none d-lg-block d-xl-block no-gutters"><img alt="Мегасайт" class="img-fluid" src="https://st28.stblizko.ru/images/useful_links/000/093/105_original.png" /></div>
+
+                            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                              <p class="card-title_bl"><strong>Товарное сопровождение</strong></p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <p class="card_2_p">Приведем в порядок ваши товары: структурируем товарный каталог и детально проработаем каждую карточку товара.</p>
+                      </div>
+                      <a class="flex-grow-0 btn_3 btn_orange" href="https://www.blizko.ru/about/goods_promotion" target="_blank">Подробнее</a>
+                    </div>
+
+                    <div class="card_2 col-xl-5 col-lg-5 col-md-10 col-sm-10 col-10 d-flex flex-column justify-content-between no-gutters divider card_padd"></div>
+                  </div>
+                  <!--------------------------3 форма-------------------------->
+
+                  <div class="divider_2 hide_624"></div>
+
+                  <div class="col-xl-10 col-lg-10 col-md-10  col-sm-12 col-12">
+                    <div class="row justify-content-center">
+                      <div class="col-12">
+                        <div class="row justify-content-center">
+                          <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12">
+                            <h4>Эффективные дополнительные каналы для привлечения покупателей и&nbsp;роста заявок</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row justify-content-center">
+                    <div class="card_2 card_shadow col-xl-5 col-lg-5 col-md-10 col-sm-10 col-12 d-flex flex-column justify-content-between no-gutters divider card_padd">
+                      <div class="flex-grow-1">
+                        <div class="col-12">
+                          <div class="row align-items-center">
+                            <div class="col-xl-2 col-lg-2 col-md-2 d-none d-sm-none d-md-none d-lg-block d-xl-block no-gutters"><img alt="Мегасайт" class="img-fluid" src="https://st28.stblizko.ru/images/useful_links/000/093/029_original.png" /></div>
+
+                            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                              <p class="card-title_or"><strong>Мегатрафик</strong></p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <p class="card_2_p">Подключим дополнительные рекламные каналы: контекстную рекламу, социальные сети и т.д.</p>
+                      </div>
+                      <a class="flex-grow-0 btn_4 btn_orange" href="https://www.blizko.ru/about/megatraffic" target="_blank">Подробнее</a>
+                    </div>
+
+                    <div class="card_2 card_shadow col-xl-5 col-lg-5 col-md-10 col-sm-10 col-12 d-flex flex-column justify-content-between no-gutters divider card_padd">
+                      <div class="flex-grow-1">
+                        <div class="col-12">
+                          <div class="row align-items-center">
+                            <div class="col-xl-2 col-lg-2 col-md-2 d-none d-sm-none d-md-none d-lg-block d-xl-block no-gutters"><img alt="Баннерная реклама" class="img-fluid"
+                                src="https://st28.stblizko.ru/images/useful_links/000/093/030_original.png" /></div>
+
+                            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                              <p class="card-title_or"><strong>Баннерная реклама</strong></p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <p class="card_2_p">Выделим ваши предложения, разместив медийный баннер в товарных рубриках на торговой площадке BLIZKO.</p>
+                      </div>
+                      <a class="flex-grow-0 btn_4 btn_orange" href="http://{:name_lat}.blizko.ru/about/banner" target="_blank">Подробнее</a>
+                    </div>
+
+                    <div class="card_2 card_shadow col-xl-5 col-lg-5 col-md-10 col-sm-10 col-12 d-flex flex-column justify-content-between no-gutters divider card_padd">
+                      <div class="flex-grow-1">
+                        <div class="col-12">
+                          <div class="row align-items-center">
+                            <div class="col-xl-2 col-lg-2 col-md-2 d-none d-sm-none d-md-none d-lg-block d-xl-block no-gutters"><img alt="Реклама в соцсетях" class="img-fluid"
+                                src="https://st28.stblizko.ru/images/useful_links/000/093/032_original.png" /></div>
+
+                            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                              <p class="card-title_or"><strong>Реклама в соцсетях</strong></p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <p class="card_2_p">Приведем на ваш сайт дополнительных посетителей из социальных сетей Instagram, Facebook и Вконтакте.</p>
+                      </div>
+                      <a class="flex-grow-0 btn_4 btn_orange" href="https://services.blizko.ru/target" target="_blank">Подробнее</a>
+                    </div>
+
+                    <div class="card_2 col-xl-5 col-lg-5 col-md-10 col-sm-10 col-10 d-flex flex-column justify-content-between no-gutters divider card_padd"></div>
+                  </div>
+                  <!------------------------------------график------------------------------------>
+
+                  <div class="divider_2 hide_624"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center divider">
+            <div class="col-xl-10 col-lg-10 col-md-10  col-sm-12 col-10">
+              <div class="row justify-content-center">
+                <div class="col-12">
+                  <div class="row justify-content-center">
+                    <div class="col-auto hide_992"><img alt="" class="img-fluid" src="https://st28.stblizko.ru/images/useful_links/000/093/018_original.png" style="max-width:124px;" /></div>
+
+                    <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                      <h2>Продвижение онлайн-гипермаркетов на&nbsp;BLIZKO</h2>
+
+                      <h4>Интернет-гипермаркетам BLIZKO предлагает схему сотрудничества с покликовой системой оплаты, когда вы платите за переход в ваш интернет-магазин. Вы можете выбрать Серебряный, Золотой или Платиновый тариф для получения нужного
+                        объема трафика.</h4>
+                    </div>
+                  </div>
+
+                  <div class="row justify-content-center divider">
+                    <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                      <h4><b>В зависимости от рынка вашей компании и приоритета в каталогах BLIZKO</b></h4>
+                    </div>
+                  </div>
+
+                  <div class="row justify-content-center divider">
+                    <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12"><img alt="график стоимости" class="img-fluid" src="https://st28.stblizko.ru/images/useful_links/000/093/069_original.png" /></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+          <!-------------------------форма_2------------------------->
+
+          <div class="row justify-content-center gray">
+            <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 divider">
+              <div class="row justify-content-center">
+                <div class="col-12">
+                  <div class="row justify-content-center">
+                      <div class="col-xl-11 col-lg-11 col-md-11 col-sm-12 col-12">
+                        <h3>Хотите узнать сколько трафика в свой интернет-магазин получит ваша компания с BLIZKO?</h3>
+                        <h4>Оставьте заявку &mdash; наш специалист сделает расчет эффективности продвижения вашей компании на BLIZKO.</h4>
+                      </div>
+                  </div>
+
+                  <div class="row justify-content-center">
+                    <div class="col-xl-12 col-lg-12 col-md-10 col-sm-12 col-12">
+                      <div class="row justify-content-center">
+                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-10 col-12 divider for_3">
+                          <form action="https://docs.google.com/forms/d/e/1FAIpQLSfIfAuWtJC9KaQ6U1kO6P7GBEsVpwU2opWkoPhRKoOglw5ibg/formResponse">
+                            <div class="form-group"><input aria-describedby="i.desc.1965159398 i.err.1965159398" aria-label="Ваше имя" autocomplete="off" class="form-control" data-initial-dir="auto" data-initial-value="" dir="auto" id="name"
+                                jsname="YPqjbf" name="entry.1811410461" placeholder="Ваше имя" required="" tabindex="0" type="name" value="" /></div>
+
+                            <div class="form-group"><input aria-describedby="i.desc.759083124 i.err.759083124" aria-label="Телефон для связи" autocomplete="off" class="form-control" data-initial-dir="auto" data-initial-value="" dir="auto" id="Mytel"
+                                jsname="YPqjbf" name="entry.276794704" placeholder="Телефон" required="" tabindex="0" type="Mytel" value="" /></div>
+                            <!--скрытое поле-->
+
+                            <div class="freebirdFormviewerViewItemsItemItem freebirdFormviewerViewItemsTextTextItem" data-item-id="170766147" jsaction="sPvj8e:e4JwSe,vwKRrd;" jscontroller="rDGJeb" jsname="ibnC6b" role="listitem"
+                              style="display: none;">
+                              <div class="freebirdFormviewerViewItemsItemItemHeader">
+                                <div class="freebirdFormviewerViewItemsItemItemTitleContainer">
+                                  <div aria-describedby="i.desc.170766147" aria-level="2" class="freebirdFormviewerViewItemsItemItemTitle" dir="auto" role="heading">ID компании</div>
+
+                                  <div class="freebirdFormviewerViewItemsItemItemHelpText" dir="auto" id="i.desc.170766147"></div>
+                                </div>
+                              </div>
+
+                              <div class="freebirdFormviewerViewItemsTextItemWrapper" style="/* display: none; */">
+                                <div class="quantumWizTextinputPaperinputEl freebirdFormviewerViewItemsTextShortText freebirdThemedInput" jsaction="clickonly:KjsqPd; focus:Jt1EX; blur:fpfTEe; input:Lg5SV;" jscontroller="pxq3x" jsname="W85ice"
+                                  jsshadow="">
+                                  <div class="quantumWizTextinputPaperinputMainContent exportContent">
+                                    <div class="quantumWizTextinputPaperinputContentArea">
+                                      <div class="quantumWizTextinputPaperinputInputArea"><input aria-describedby="i.desc.170766147 i.err.170766147" aria-label="ID компании" autocomplete="off" class="quantumWizTextinputPaperinputInput exportInput"
+                                          data-initial-dir="auto" data-initial-value="" dir="auto" jsname="YPqjbf" name="entry.1652179291" tabindex="0" type="text" value="14424517" /></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!--скрытое поле--><button class="btn_form btn_orange btn_width100" type="submit">Заказать прогноз</button><small class="form-text text-muted">Нажимая на кнопку, вы даете согласие на обработку персональных данных в
+                              соответствии с <a class="orange" href="https://www.blizko.ru/privacy_policy" target="_blank">политикой конфиденциальности</a> и принимаете условия <a class="orange" href="https://www.blizko.ru/terms"
+                                target="_blank">пользовательского соглашения</a></small>
+                          </form>
+                        </div>
+
+                        <div class="col-3 hide_992 divider"><img alt="" class="img-fluid form_1920" src="https://st28.stblizko.ru/images/useful_links/000/093/033_original.png" style="" /></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="divider"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-----------------результаты клиентов----------------->
+
+          <div class="row justify-content-center divider">
+            <div class="col-xl-10 col-lg-10 col-md-10  col-sm-12 col-12">
+              <div class="row justify-content-center">
+                <div class="col-12">
+                  <div class="row justify-content-center">
+                    <div class="col-auto hide_992"><img alt="" class="img-fluid" src="https://st28.stblizko.ru/images/useful_links/000/093/018_original.png" style="max-width:124px;" /></div>
+
+                    <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
+                      <h2>Результаты наших клиентов</h2>
+
+                      <h4>Помогаем компаниям получать новых покупателей.</h4>
+                    </div>
+                  </div>
+
+                  <div class="row justify-content-center">
+                    <div class="col-10">
+                      <div class="row justify-content-center card_otstyp">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex justify-content-center divider">
+                          <div class="card_otstyp_2" style="max-width: 500px;">
+                            <div class="col-12">
+                              <div class="row">
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3"><img alt="" class="img-fluid" src="https://st28.stblizko.ru/images/useful_links/000/093/034_original.png?1604299542" style="min-width: 55px;" /></div>
+
+                                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">
+                                  <p class="card-text_kk orange">Cтроительные материалы</p>
+                                  <p class="cards_keis-text">Компания &quot;Апогей &mdash; Строй&quot;, г.Челябинск<br />
+                                    apogey-stroy.blizko.ru</p>
+                                </div>
+                              </div>
+
+                              <ul>
+                                <li class="orange"><b><span class="black_color_modal">Начало размещения: февраль 2015г.</span></b></li>
+                                <li class="orange"><b><span class="black_color_modal">Посещаемость: 750 посетителей за месяц</span></b></li>
+                                <li class="orange"><b><span class="black_color_modal">Количество звонков (среднее): 62</span></b></li>
+                                <li class="orange"><b><span class="black_color_modal">Конверсия посетителей в звонки: 8%</span></b></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex justify-content-center divider">
+                          <div class="card_otstyp_2" style="max-width: 500px;">
+                            <div class="col-12">
+                              <div class="row">
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3"><img alt="" class="img-fluid" src="https://st28.stblizko.ru/images/useful_links/000/093/035_original.png" style="min-width: 55px;" /></div>
+
+                                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">
+                                  <p class="card-text_kk orange">Инструменты</p>
+                                  <p class="cards_keis-text">Компания &quot;БензомирДВ&quot;, г.Хабаровск<br />
+                                    www.бензомирдв.рф</p>
+                                </div>
+                              </div>
+
+                              <ul>
+                                <li class="orange"><b><span class="black_color_modal">Начало размещения: июнь 2014г.</span></b></li>
+                                <li class="orange"><b><span class="black_color_modal">Посещаемость: 750 посетителей за месяц</span></b></li>
+                                <li class="orange"><b><span class="black_color_modal">Количество звонков (среднее): 11</span></b></li>
+                                <li class="orange"><b><span class="black_color_modal">Конверсия посетителей в звонки: 2%</span></b></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row justify-content-center">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex justify-content-center divider">
+                          <div class="card_otstyp_2" style="max-width: 500px;">
+                            <div class="col-12">
+                              <div class="row">
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3"><img alt="" class="img-fluid" src="https://st28.stblizko.ru/images/useful_links/000/093/036_original.png" style="min-width: 55px;" /></div>
+
+                                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">
+                                  <p class="card-text_kk orange">Ремонтные работы</p>
+                                  <p class="cards_keis-text">Компания &quot;Ремонт квартир&quot;, г.Новосибирск<br />
+                                    www.remo-nsk.ru</p>
+                                </div>
+                              </div>
+
+                              <ul>
+                                <li class="orange"><b><span class="black_color_modal">Начало размещения: июнь 2016г.</span></b></li>
+                                <li class="orange"><b><span class="black_color_modal">Посещаемость: 417 посетителей за месяц</span></b></li>
+                                <li class="orange"><b><span class="black_color_modal">Количество звонков (среднее): 24</span></b></li>
+                                <li class="orange"><b><span class="black_color_modal">Конверсия посетителей в звонки: 6%</span></b></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex justify-content-center divider">
+                          <div class="card_otstyp_2" style="max-width: 500px;">
+                            <div class="col-12">
+                              <div class="row">
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3"><img alt="" class="img-fluid" src="https://st28.stblizko.ru/images/useful_links/000/093/037_original.png" style="min-width: 55px;" /></div>
+
+                                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">
+                                  <p class="card-text_kk orange">Медицина</p>
+                                  <p class="cards_keis-text">Салон &mdash; магазин &quot;Медтехника&quot;, г.Ростов<br />
+                                    www.medtex.blizko.ru</p>
+                                </div>
+                              </div>
+
+                              <ul>
+                                <li class="orange"><b><span class="black_color_modal">Начало размещения: июнь 2014г.</span></b></li>
+                                <li class="orange"><b><span class="black_color_modal">Посещаемость: 393 посетителя за месяц</span></b></li>
+                                <li class="orange"><b><span class="black_color_modal">Количество звонков (среднее): 15</span></b></li>
+                                <li class="orange"><b><span class="black_color_modal">Конверсия посетителей в звонки: 4%</span></b></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <p class="text-center card-text_kk"><a aria-controls="collapseExample" aria-expanded="false" data-toggle="collapse" href="#collapseExample" role="button" target="_blank"><u>Показать больше</u> </a></p>
+
+                      <div class="collapse card_otstyp" id="collapseExample">
+                        <div class="row justify-content-center">
+                          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex justify-content-center divider">
+                            <div class="card_otstyp_2" style="max-width: 500px;">
+                              <div class="col-12">
+                                <div class="row">
+                                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3"><img alt="" class="img-fluid" src="https://st28.stblizko.ru/images/useful_links/000/093/038_original.png" style="min-width: 55px;" /></div>
+
+                                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">
+                                    <p class="card-text_kk orange">Автозапчасти</p>
+                                    <p class="cards_keis-text">Компания &quot;Автодеталька&quot;, г.Березовский<br />
+                                      autodetalka.blizko.ru/</p>
+                                  </div>
+                                </div>
+
+                                <ul>
+                                  <li class="orange"><b><span class="black_color_modal">Начало размещения: август 2014г.</span></b></li>
+                                  <li class="orange"><b><span class="black_color_modal">Посещаемость: 21 200 посетителей за месяц</span></b></li>
+                                  <li class="orange"><b><span class="black_color_modal">Количество звонков (среднее): 1240</span></b></li>
+                                  <li class="orange"><b><span class="black_color_modal">Конверсия посетителей в звонки: 6%</span></b></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex justify-content-center divider">
+                            <div class="card_otstyp_2" style="max-width: 500px;">
+                              <div class="col-12">
+                                <div class="row">
+                                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3"><img alt="" class="img-fluid" src="https://st28.stblizko.ru/images/useful_links/000/093/184_original.png" style="min-width: 55px;" /></div>
+
+                                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">
+                                    <p class="card-text_kk orange">Сантехника</p>
+                                    <p class="cards_keis-text">Компания &quot;Тиком&quot;, г.Новосибирск<br />
+                                      www.ticom-sib.ru/</p>
+                                  </div>
+                                </div>
+
+                                <ul>
+                                  <li class="orange"><b><span class="black_color_modal">Начало размещения: август 2016г.</span></b></li>
+                                  <li class="orange"><b><span class="black_color_modal">Посещаемость: 760 посетителей за месяц</span></b></li>
+                                  <li class="orange"><b><span class="black_color_modal">Количество звонков (среднее): 23</span></b></li>
+                                  <li class="orange"><b><span class="black_color_modal">Конверсия посетителей в звонки: 3%</span></b></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!------------------форма------------------>
+
+          <div class="row justify-content-center gray">
+            <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12 divider">
+              <div class="row justify-content-center">
+                <div class="col-12">
+                  <div class="row justify-content-center">
+                      <div class="col-xl-11 col-lg-11 col-md-11 col-sm-12 col-10">
+                        <h3>Хотите посмотреть результаты компаний вашего рынка на BLIZKO?</h3>
+                        <h4>Оставьте заявку наш специалист сделает расчет эффективности продвижения вашей компании на BLIZKO.</h4>
+                      </div>
+                  </div>
+
+                  <div class="row justify-content-center">
+                    <div class="col-xl-12 col-lg-12 col-md-10 col-sm-12 col-12">
+                      <div class="row justify-content-center">
+                        <div class="col-3 hide_992 divider"><img alt="" class="img-fluid form_1920" src="https://st28.stblizko.ru/images/useful_links/000/093/040_original.png" style="" /></div>
+
+                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-10 col-10 divider for_3">
+                          <form action="https://docs.google.com/forms/d/e/1FAIpQLSfIfAuWtJC9KaQ6U1kO6P7GBEsVpwU2opWkoPhRKoOglw5ibg/formResponse">
+                            <div class="form-group"><input aria-describedby="i.desc.1965159398 i.err.1965159398" aria-label="Ваше имя" autocomplete="off" class="form-control" data-initial-dir="auto" data-initial-value="" dir="auto" id="name"
+                                jsname="YPqjbf" name="entry.1811410461" placeholder="Ваше имя" required="" tabindex="0" type="name" value="" /></div>
+
+                            <div class="form-group"><input aria-describedby="i.desc.759083124 i.err.759083124" aria-label="Телефон для связи" autocomplete="off" class="form-control" data-initial-dir="auto" data-initial-value="" dir="auto" id="Mytel"
+                                jsname="YPqjbf" name="entry.276794704" placeholder="Телефон" required="" tabindex="0" type="Mytel" value="" /></div>
+                            <!--скрытое поле-->
+
+                            <div class="freebirdFormviewerViewItemsItemItem freebirdFormviewerViewItemsTextTextItem" data-item-id="170766147" jsaction="sPvj8e:e4JwSe,vwKRrd;" jscontroller="rDGJeb" jsname="ibnC6b" role="listitem"
+                              style="display: none;">
+                              <div class="freebirdFormviewerViewItemsItemItemHeader">
+                                <div class="freebirdFormviewerViewItemsItemItemTitleContainer">
+                                  <div aria-describedby="i.desc.170766147" aria-level="2" class="freebirdFormviewerViewItemsItemItemTitle" dir="auto" role="heading">ID компании</div>
+
+                                  <div class="freebirdFormviewerViewItemsItemItemHelpText" dir="auto" id="i.desc.170766147"></div>
+                                </div>
+                              </div>
+
+                              <div class="freebirdFormviewerViewItemsTextItemWrapper" style="/* display: none; */">
+                                <div class="quantumWizTextinputPaperinputEl freebirdFormviewerViewItemsTextShortText freebirdThemedInput" jsaction="clickonly:KjsqPd; focus:Jt1EX; blur:fpfTEe; input:Lg5SV;" jscontroller="pxq3x" jsname="W85ice"
+                                  jsshadow="">
+                                  <div class="quantumWizTextinputPaperinputMainContent exportContent">
+                                    <div class="quantumWizTextinputPaperinputContentArea">
+                                      <div class="quantumWizTextinputPaperinputInputArea"><input aria-describedby="i.desc.170766147 i.err.170766147" aria-label="ID компании" autocomplete="off" class="quantumWizTextinputPaperinputInput exportInput"
+                                          data-initial-dir="auto" data-initial-value="" dir="auto" jsname="YPqjbf" name="entry.1652179291" tabindex="0" type="text" value="14424517" /></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="btn_form btn_orange btn_width100" type="submit">Заказать прогноз</button><small class="form-text text-muted">Нажимая на кнопку, вы даете согласие на обработку персональных данных в соответствии с <a
+                                class="orange" href="https://www.blizko.ru/privacy_policy" target="_blank">политикой конфиденциальности</a> и принимаете условия <a class="orange" href="https://www.blizko.ru/terms" target="_blank">пользовательского
+                                соглашения</a></small>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="divider"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center divider">
+            <div class="col-xl-10 col-lg-10 col-md-10  col-sm-12 col-10">
+              <div class="row justify-content-center">
+                <div class="col-12">
+                  <div class="row justify-content-center">
+                    <div class="col-auto hide_992"><img alt="" class="img-fluid" src="https://st28.stblizko.ru/images/useful_links/000/093/018_original.png" style="max-width:124px;" /></div>
+
+                    <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                      <h2>С нами сотрудничают</h2>
+                      <h4>Крупные компании разных рынков уже получают заявки с BLIZKO.</h4>
+                    </div>
+                  </div>
+
+                  <div class="row justify-content-center">
+                    <div class="col-10">
+                      <div class="row justify-content-center card_otstyp">
+                        <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                          <div class="carousel slide" data-interval="2000" data-ride="carousel" id="carouselExampleSlidesOnly">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active"><img alt="First slide" class="d-block w-100" src="https://st34.stblizko.ru/images/useful_links/000/093/826_original.png" /></div>
+
+                              <div class="carousel-item"><img alt="Second slide" class="d-block w-100" src="https://st34.stblizko.ru/images/useful_links/000/093/827_original.png" /></div>
+
+                              <div class="carousel-item"><img alt="Third slide" class="d-block w-100" src="https://st34.stblizko.ru/images/useful_links/000/093/828_original.png" /></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="divider"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--------------футер-------------->
+
+          <div class="row justify-content-center black">
+            <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12 divider">
+              <div class="row justify-content-center">
+                <div class="col-12">
+                  <div class="row justify-content-center">
+                    <div class="row justify-content-center">
+                      <div class="col-xl-11 col-lg-11 col-md-11 col-sm-10 col-10">
+                        <h3 class="white">Хотите попробовать бесплатно?</h3>
+                      </div>
+
+                      <div class="col-xl-11 col-lg-11 col-md-11 col-sm-10 col-10">
+                        <h4 class="white">Мы даем вам 14 дней демо-режима. Для новых компаний после регистрации на BLIZKO.</h4>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row justify-content-center">
+                    <div class="col-xl-12 col-lg-12 col-md-10 col-sm-12 col-12">
+                      <div class="row justify-content-center">
+                        <div class="col-3 hide_992"><img alt="" class="img-fluid" src="https://st28.stblizko.ru/images/useful_links/000/093/062_original.gif" style="" /></div>
+
+                        <div class="col-xl-8 col-lg-8 col-md-12 col-sm-10 col-10 divider for_3">
+                          <p class="white">Возможность опробовать функционал интернет-магазина на площадке</p>
+                          <p class="white">Возможность получить прогноз эффективности размещения</p>
+
+                          <h4 class="orange"><a class="orange" href="https://ru.blizko.ru/company_wizard/new?price=dk&amp;button&amp;type=dk" style="text-decoration: underline;" target="_blank">Зарегистрируйтесь и откройте магазин на BLIZKO!</a></h4>
+                          <a class="btn new_red" href="https://ru.blizko.ru/company_wizard/new?price=dk&amp;button&amp;type=dk" target="_blank">Попробовать BLIZKO в демо-режиме</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="divider"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center footer">
+            <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 divider">
+              <div class="row justify-content-center">
+                <div class="col-12">
+                  <div class="col-12">
+                    <div class="row">
+                      <div class="col-xl-9 col-lg-9 col-md-9 col-sm-8 col-12">
+                        <div class="row">
+                          <div class="col-12" style="padding-bottom:15px;"><span class="white"><a class="white a_f" href="https://www.blizko.ru/" target="_blank">На главную страницу</a></span></div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-12" style="padding-bottom:15px;"><span class="white"><a class="white a_f" href="https://www.blizko.ru/terms" target="_blank">Пользовательское соглашение</a></span></div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-12" style="padding-bottom:15px;"><span class="white"><a class="white a_f" href="https://www.blizko.ru/about/response" target="_blank">Отзывы</a></span></div>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 col-12">
+                        <div class="row">
+                          <div class="col-12" style="padding-bottom: 8px;"><a class="white a_f" href="tel:88007000191" target="_blank"><img alt="" class="cont_icon_2"
+                                src="https://st28.stblizko.ru/images/useful_links/000/093/067_original.png" /><u>8(800)7000-191</u></a></div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-12" style="padding-bottom: 8px;"><a class="white a_f" href="mailto:spravka@blizko.ru" target="_blank"><img alt="" class="cont_icon_2"
+                                src="https://st28.stblizko.ru/images/useful_links/000/093/068_original.png" /><u>spravka@blizko.ru</u> </a></div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-12" style="padding-bottom: 8px;">
+                            <ul class="contacts" style="padding-top:15px;">
+                              <li class="icons_footer cont_2"><a href="https://www.facebook.com/blizkobusiness" target="_blank"><img alt="" class="cont_icon" src="https://st28.stblizko.ru/images/useful_links/000/093/063_original.png" /></a></li>
+                              <li class="icons_footer"><a href="https://www.youtube.com/user/BlizkoBusiness" target="_blank"><img alt="" class="cont_icon" src="https://st28.stblizko.ru/images/useful_links/000/093/064_original.png" /></a></li>
+                              <li class="icons_footer"><a href="https://vk.com/blizkobusiness" target="_blank"><img alt="" class="cont_icon" src="https://st28.stblizko.ru/images/useful_links/000/093/065_original.png" /></a></li>
+                              <li class="icons_footer"><a href="https://zen.yandex.ru/id/5f23dc3cb81d304d2406271b" target="_blank"><img alt="" class="cont_icon" src="https://st28.stblizko.ru/images/useful_links/000/093/066_original.png" /></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="divider"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-fluid footer no-gutters">
+              <div class="row">
+                <div class="col-12 margin_white_arrow">
+                  <div class="row justify-content-center"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p style="display: none;">{crm_analytics:show_page(view_price)}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
